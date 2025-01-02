@@ -1,0 +1,227 @@
+@import "mixins";
+
+%customheader{
+    height: 150px;
+    padding: 18px 80px;
+    margin-top: -170px;
+    display: flex;
+    flex-wrap: wrap; 
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+%customheader--img{
+    width: 50px;
+    height: 50px;
+}
+
+%customheader--logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+%customheader--name{
+    display: inline;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Pacifico", serif;
+    margin-right: 430px;
+    margin-left: 20px;
+}
+
+%customheader--form{
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #FAF8F8;
+    padding-left: 30px;
+    margin-right: 30px;;
+    justify-content: center;
+}
+
+%customsearch-button{
+   font-size: 20px !important;
+   font-weight: 400;
+   color: #565151;
+   margin-left: 20px;
+   padding-top: 10px;
+}
+
+%customheader--account{
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+%customheader--account--profile{
+    color:white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+%customfa-user{
+    color:white;
+}
+
+%customheader--line{
+    height: 2px;
+    width: 100%;
+    color: #333;
+}
+
+%customheader--nav--element{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+%customMain{
+    margin-top:170px;
+}
+
+%customcarousel-image-container{
+    width: 90%;
+    margin-left: 80px;
+    position: relative;
+}
+
+%customcarousel-text{
+    width: 50%;
+    position: absolute;
+    top: 40%;  
+    left: 30px; 
+    color: white;  
+    padding: 20px;
+}
+
+%customcarousel-text--first{
+    display: inline;
+    font-size: 70px;
+    font-family: "Charm", serif;
+}
+
+%customcarousel-text--second{
+
+    font-size: 20px;
+    width: 85%;
+}
+
+%customMain--first{
+    @include sections(white);
+    padding-top: 170px;
+}
+
+%customGirl{
+    height: 400px;
+    margin-right: 50px;
+}
+
+%customTitle{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Charm", serif;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+%customMain--first--text{
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+%customText{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Charm", serif;
+    color: #565151;
+}
+
+%customPeacock{
+    height: 400px;
+    margin-top: 100px;
+}
+
+
+%customtables{
+    display: flex;
+    flex-wrap: wrap;
+    gap:150px;
+}
+
+%customTable1{
+    margin-left: 100px;
+    display: inline;
+}
+
+%customTable2{
+    display: inline;
+}
+
+%customMain--second{
+    gap: 80px;
+    @include sections(rgba(226, 226, 226, 0.505));
+}
+
+%customMain--second--text{
+    width: 470px;
+}
+
+%customfa-arrow-right{
+    color: blue;
+    margin-right: 10px;
+}
+
+%customBoldtext{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+%customMain--third{
+    @include sections(white);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+%customMain--third--text{
+    display: flex;
+}
+
+%customMain--third--cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+%customCard{
+    width: 200px;
+    height: 260px;
+    margin-left: 50px;
+	background-image: url("./../images/frida.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position:relative;
+}
+
+
+%customMain--fourth{
+    @include sections(rgba(226, 226, 226, 0.505));
+}
+
+%customMain--fifth{
+    @include sections(white);
+}

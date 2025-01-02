@@ -1,0 +1,159 @@
+@import "reset";
+@import "placeholders";
+@import "mixins";
+
+.header{
+    @extend %customheader;
+
+    // &--logo {
+    //     @extend %customheader--logo;
+    //     @extend %customheader--img;
+    // }
+
+    &--name{
+        @extend %customheader--name;
+    }
+
+    &--form{
+        @extend %customheader--form;
+        @extend %customsearch-button;
+    }
+
+    &--account{
+        &:hover {
+            background-color:rgb(181, 160, 0);
+            width: 155px;
+            height: 65px;
+        }
+
+        @extend %customheader--account;
+        
+
+        .fa-user{
+            @extend %customfa-user;
+        }
+        
+        &--profile{
+            @extend %customheader--account--profile;
+        }
+    }
+
+    &--line{
+        @extend %customheader--line;
+    }
+
+    &--nav{
+        &--element{
+            @extend %customheader--nav--element;
+            &:hover {
+                text-decoration:underline;
+                color:rgb(181, 160, 0);
+            }
+        }
+    }
+}
+
+.Main{
+    @extend %customMain;
+    .carousel-image-container{
+        @extend %customcarousel-image-container;
+    .carousel-text{
+        @extend %customcarousel-text;
+
+        .carousel-text--first{
+            @extend %customcarousel-text--first;
+        }
+
+        .carousel-text--second{
+           @extend %customcarousel-text--second;
+        }
+    }
+    }
+
+    &--first{
+        @extend %customMain--first;
+
+        .Girl{
+            @extend %customGirl;
+        }
+
+        &--text{
+            @extend %customMain--first--text;
+            
+            .Title{
+                @extend %customTitle;
+            } 
+
+            .Text{
+                @extend %customText;
+            } 
+
+            .tables{
+                @extend %customtables;
+                .Table1{
+                    @extend %customTable1;
+                }
+                .Table2{
+                    @extend %customTable2;
+                }
+            }
+        }
+
+        .Peacock{
+            @extend %customPeacock;
+        }
+    }
+
+    &--second{
+        @extend %customMain--second;
+
+        &--text{
+            @extend %customMain--second--text;
+
+            .Title{
+                @extend %customTitle;
+            }
+
+            .Text{
+                @extend %customText;
+            }
+
+            .fa-arrow-right{
+                @extend %customfa-arrow-right;
+            }
+
+            .Boldtext{
+                @extend %customBoldtext;
+            }
+        }
+    }
+
+    &--third{
+        @extend %customMain--third;
+
+        .Title{
+            @extend %customTitle;
+        }
+
+        .Text{
+            @extend %customText;
+        }
+
+        &--cards{
+            @extend %customMain--third--cards;
+            .Card{
+                @extend %customCard;
+            }
+        }
+    }
+
+
+
+    &--fourth{
+        @extend %customMain--fourth;
+    }
+
+    &--fifth{
+        @extend %customMain--fifth;
+    }
+}
