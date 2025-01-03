@@ -261,7 +261,9 @@
 /*making fifth section*/
 %customMain--fifth{
     @include sections(white);
+    flex-direction: column;
 }
+
 
 /*making sixth section*/
 %customMain--sixth{
@@ -296,8 +298,52 @@
 /*making seventh section*/
 %customMain--seventh{
     @include sections(white);
+    flex-direction: column;
 }
 
+%costumcomments{
+    display: flex;
+    gap: 50px;
+}
+
+%customelements{
+    background-color: rgba(128, 128, 128, 0.129);
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+%customeltext{
+    @include text(26px);
+}
+
+// %customelpar{
+
+// }
+
+%customcommentfoot{
+    display: flex;
+    gap: 50px;
+}
+
+%customcommentpic{
+    width: 50px;
+    border-radius: 100%;
+}
+%customcommentname{
+    display: flex;
+    flex-direction: column;
+}
+
+%customCname{
+    @include text(24px);
+}
+
+%customCpar{
+    @include text2(18px, grey)
+}
 
 /*making footer*/
 %customFooter{

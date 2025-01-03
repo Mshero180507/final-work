@@ -181,6 +181,29 @@
 
     &--fifth{
         @extend %customMain--fifth;
+        .Title{
+            @extend %customTitle;
+        }
+
+        .Text{
+            @extend %customText;
+        }
+
+        &--cards{
+            @extend %customMain--fourth--cards;
+            .fourth-cards{
+                @extend %customfourth-cards;
+                .Fourth-cards-pic{
+                    @extend %customFourth-cards-pic;
+                }
+                .fourth-text{
+                    @extend %customfourth-text;
+                }
+                .fourth-par{
+                    @extend %fourth-par;
+                }
+            }
+        }
     }
 
     &--sixth{
@@ -211,6 +234,44 @@
 
     &--seventh{
         @extend %customMain--seventh;
+        .Title{
+            @extend %customTitle;
+        }
+
+        .Text{
+            @extend %customText;
+        }
+        .comments{
+            @extend %costumcomments;
+            .elements{
+                @extend %customelements;
+                .eltext{
+                    @extend %customeltext;
+                }
+                .elpar{
+                    @extend %customelpar;
+                }
+                .commentfoot{
+                    @extend %customcommentfoot;
+                    .commentpic{
+                        @extend %customcommentpic;
+                    }
+                    .commentname{
+                        @extend %customcommentname;
+                        .Cname{
+                            @extend %customCname;
+                        }
+                        .Cpar{
+                            @extend %customCpar;
+                        }
+                    }
+                    .commenttime{
+                        @extend %customcommenttime;
+                    }
+                }
+            }
+        }
+
     }
 }
 

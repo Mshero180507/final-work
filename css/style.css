@@ -138,7 +138,7 @@ time, mark, audio, video {
   margin-right: 50px;
 }
 
-.Main--sixth .sixthtext .Title, .Main--fourth .Title, .Main--third .Title, .Main--second--text .Title, .Main--first--text .Title {
+.Main--seventh .Title, .Main--sixth .sixthtext .Title, .Main--fifth .Title, .Main--fourth .Title, .Main--third .Title, .Main--second--text .Title, .Main--first--text .Title {
   font-weight: 700;
   font-size: 36px;
   font-family: "Charm", serif;
@@ -153,7 +153,7 @@ time, mark, audio, video {
   margin-right: 50px;
 }
 
-.Main--sixth .sixthtext .Text, .Main--fourth .Text, .Main--third .Text, .Main--second--text .Text, .Main--first--text .Text {
+.Main--seventh .Text, .Main--sixth .sixthtext .Text, .Main--fifth .Text, .Main--fourth .Text, .Main--third .Text, .Main--second--text .Text, .Main--first--text .Text {
   font-weight: 700;
   font-size: 20px;
   font-family: "Charm", serif;
@@ -246,24 +246,24 @@ time, mark, audio, video {
   flex-direction: column;
 }
 
-.Main--fourth--cards .fourth-cards .Fourth-cards-pic {
+.Main--fifth--cards .fourth-cards .Fourth-cards-pic, .Main--fourth--cards .fourth-cards .Fourth-cards-pic {
   width: 300px;
 }
 
-.Main--fourth--cards .fourth-cards {
+.Main--fifth--cards .fourth-cards, .Main--fourth--cards .fourth-cards {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
 }
 
-.Main--fourth--cards .fourth-cards .fourth-text {
+.Main--fifth--cards .fourth-cards .fourth-text, .Main--fourth--cards .fourth-cards .fourth-text {
   font-weight: 700;
   font-size: 36px;
   font-family: "Charm", serif;
 }
 
-.Main--fourth--cards .fourth-cards .fourth-par {
+.Main--fifth--cards .fourth-cards .fourth-par, .Main--fourth--cards .fourth-cards .fourth-par {
   font-weight: 400;
   font-size: 20px;
   font-family: none;
@@ -271,7 +271,7 @@ time, mark, audio, video {
   margin-bottom: 10px;
 }
 
-.Main--fourth--cards {
+.Main--fifth--cards, .Main--fourth--cards {
   display: flex;
   gap: 40px;
   justify-content: space-around;
@@ -284,6 +284,7 @@ time, mark, audio, video {
   width: 100%;
   padding: 70px;
   background-color: white;
+  flex-direction: column;
 }
 
 /*making sixth section*/
@@ -326,6 +327,36 @@ time, mark, audio, video {
   width: 100%;
   padding: 70px;
   background-color: white;
+  flex-direction: column;
+}
+
+.Main--seventh .comments {
+  display: flex;
+  gap: 50px;
+}
+
+.Main--seventh .comments .elements {
+  background-color: rgba(128, 128, 128, 0.129);
+  width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.Main--seventh .comments .elements .eltext {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Charm", serif;
+}
+
+.Main--seventh .comments .elements .commentfoot {
+  display: flex;
+}
+
+.Main--seventh .comments .elements .commentfoot .commentpic {
+  width: 50px;
+  border-radius: 100%;
 }
 
 /*making footer*/
