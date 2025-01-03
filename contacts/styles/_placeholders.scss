@@ -1,0 +1,244 @@
+@import "mixins";
+
+/*header*/
+%customheader{
+    height: 150px;
+    padding: 18px 80px;
+    margin-top: -170px;
+    display: flex;
+    flex-wrap: wrap; 
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+%customheader--img{
+    width: 50px;
+    height: 50px;
+}
+
+%customheader--logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+%customheader--name{
+    display: inline;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Pacifico", serif;
+    margin-right: 430px;
+    margin-left: 20px;
+}
+
+%customheader--form{
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #FAF8F8;
+    padding-left: 30px;
+    margin-right: 30px;;
+    justify-content: center;
+}
+
+%customsearch-button{
+   font-size: 23px !important;
+   font-weight: 400;
+   color: #565151;
+   margin-left: 20px;
+}
+
+%customheader--account{
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+%customheader--account--profile{
+    color:white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+%customfa-user{
+    color:white;
+}
+
+%customheader--line{
+    height: 2px;
+    width: 100%;
+    color: #333;
+}
+
+%customheader--nav--element{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/*body*/
+%customMain{
+    padding-top: 50px;
+    padding-left: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 170px;
+    height: 900px;
+}
+
+%customMaintext{
+    @include text(36px);
+    margin-bottom: 25px;
+}
+
+%customcontacts{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 50px;
+}
+
+
+%customnumber{
+    @include text2(20px, grey);
+    margin-bottom: 10px;
+}
+
+/*second part of the body*/
+%customMain--sign{
+    display: flex;
+    flex-direction: column;
+}
+
+%customsigntext{
+    width: 700px;
+}
+
+%customsignup{
+    width: 700px;
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.084);
+    padding: 40px 40px ;
+    display: flex;
+    gap: 30px;
+}
+
+%customname{
+    display: inline;
+}
+
+%customform-els{
+    width: 270px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+%customtextarea{
+    width: 700px;
+    height: 350px;
+    background-color: rgba(128, 128, 128, 0.084);
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+%customarea{
+    width: 600px;
+    height: 200px;
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+%customsubmit{
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+}
+
+/*making footer*/
+%customFooter{
+    height: 220px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+%customfootertext{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pacifico", serif;
+    margin-bottom: 20px;
+}
+
+%customfooterpar{
+    @include text2(20px, white);
+    margin-bottom:30px;
+}
+
+%customFooter--logo{
+    width: 400px;
+}
+
+%customFooter--links{
+    display: flex;
+    gap: 80px;
+}
+
+%customfoottext{
+    @include text(30px);
+    color:white;
+}
+
+%customfootlinks{
+    @include text2(20px, white);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+%customMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+%customsponsors{
+    display: flex;
+    flex-direction: column;
+}
+
+%customfooter--logo{
+    width: 70px;
+}
+
+%customfooterlinks{
+    display: flex;
+    gap: 25px;
+}
+
+%customlinks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+%customlinkstext{
+    @include text2(16px, white);
+}

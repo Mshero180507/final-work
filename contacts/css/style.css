@@ -19,6 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/*header*/
 .header {
   height: 150px;
   padding: 18px 80px;
@@ -52,11 +53,10 @@ time, mark, audio, video {
 }
 
 .header--form {
-  font-size: 20px !important;
+  font-size: 23px !important;
   font-weight: 400;
   color: #565151;
   margin-left: 20px;
-  padding-top: 10px;
 }
 
 .header--account {
@@ -93,244 +93,97 @@ time, mark, audio, video {
   margin-right: 40px;
 }
 
+/*body*/
 .Main {
+  padding-top: 50px;
+  padding-left: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   margin-top: 170px;
+  height: 900px;
 }
 
-.Main .carousel-image-container {
-  width: 90%;
-  margin-left: 80px;
-  position: relative;
-}
-
-.Main .carousel-image-container .carousel-text {
-  width: 50%;
-  position: absolute;
-  top: 40%;
-  left: 30px;
-  color: white;
-  padding: 20px;
-}
-
-.Main .carousel-image-container .carousel-text .carousel-text--first {
-  display: inline;
-  font-weight: 700;
-  font-size: 70px;
-  font-family: "Charm", serif;
-}
-
-.Main .carousel-image-container .carousel-text .carousel-text--second {
-  font-size: 20px;
-  width: 85%;
-}
-
-.Main--first {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: white;
-  padding-top: 170px;
-}
-
-.Main--first .Girl {
-  height: 400px;
-  margin-right: 50px;
-}
-
-.Main--sixth .sixthtext .Title, .Main--fourth .Title, .Main--third .Title, .Main--second--text .Title, .Main--first--text .Title {
+.Main--sign .signtext .Maintext, .Main--map .Maintext {
   font-weight: 700;
   font-size: 36px;
   font-family: "Charm", serif;
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
-.Main--first--text {
-  width: 500px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 50px;
+.Main--map .contacts {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 50px;
 }
 
-.Main--sixth .sixthtext .Text, .Main--fourth .Text, .Main--third .Text, .Main--second--text .Text, .Main--first--text .Text {
-  font-weight: 700;
+.Main--sign .signtext .number, .Main--map .contacts .time .number, .Main--map .contacts .phone .number {
   font-size: 20px;
-  font-family: "Charm", serif;
-  color: #565151;
-}
-
-.Main--first .Peacock {
-  height: 400px;
-  margin-top: 100px;
-}
-
-.Main--first--text .tables {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 150px;
-}
-
-.Main--first--text .tables .Table1 {
-  margin-left: 100px;
-  display: inline;
-}
-
-.Main--first--text .tables .Table2 {
-  display: inline;
-}
-
-.Main--second {
-  gap: 80px;
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: rgba(226, 226, 226, 0.505);
-}
-
-.Main--second--text {
-  width: 470px;
-}
-
-.Main--second--text .fa-arrow-right {
-  color: blue;
-  margin-right: 10px;
-}
-
-.Main--second--text .Boldtext {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.Main--third {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: white;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-/*making cards*/
-.Main--third--cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px;
-}
-
-.Main--third--cards .Card {
-  position: relative;
-}
-
-.Main--third--cards .Card .Cardpic {
-  width: 220px;
-  height: 260px;
-}
-
-.Main--third--cards .Card .Cardtext {
-  position: absolute;
-  bottom: 10px;
-  color: white;
-  background-color: rgba(86, 81, 81, 0.8);
-}
-
-/*making fourth section*/
-.Main--fourth {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: rgba(226, 226, 226, 0.505);
-  flex-direction: column;
-}
-
-.Main--fourth--cards .fourth-cards .Fourth-cards-pic {
-  width: 300px;
-}
-
-.Main--fourth--cards .fourth-cards {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 5px;
-}
-
-.Main--fourth--cards .fourth-cards .fourth-text {
-  font-weight: 700;
-  font-size: 36px;
-  font-family: "Charm", serif;
-}
-
-.Main--fourth--cards .fourth-cards .fourth-par {
   font-weight: 400;
-  font-size: 20px;
   font-family: none;
   color: grey;
   margin-bottom: 10px;
 }
 
-.Main--fourth--cards {
-  display: flex;
-  gap: 40px;
-  justify-content: space-around;
-}
-
-/*making fifth section*/
-.Main--fifth {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: white;
-}
-
-/*making sixth section*/
-.Main--sixth {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: rgb(0, 0, 0);
-  gap: 250px;
-}
-
-.Main--sixth .sixthpic {
-  height: auto;
-}
-
-.Main--sixth .sixthtext {
+/*second part of the body*/
+.Main--sign {
   display: flex;
   flex-direction: column;
-  width: 550px;
 }
 
-.Main--sixth .sixthtext .icontext .texticon {
-  font-weight: 700;
-  font-size: 26px;
-  font-family: "Charm", serif;
-  color: white;
+.Main--sign .signtext {
+  width: 700px;
 }
 
-.Main--sixth .sixthtext .icontext .fa-check {
-  color: white;
-  margin-top: 8px;
-  margin-right: 10px;
-}
-
-/*making seventh section*/
-.Main--seventh {
+.Main--sign .signup {
+  width: 700px;
+  height: 80px;
+  background-color: rgba(128, 128, 128, 0.084);
+  padding: 40px 40px;
   display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: white;
+  gap: 30px;
+}
+
+.Main--sign .signup .email, .Main--sign .signup .name {
+  display: inline;
+}
+
+.Main--sign .signup .email .form-els, .Main--sign .signup .name .form-els {
+  width: 270px;
+  height: 30px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.Main--sign .textarea {
+  width: 700px;
+  height: 350px;
+  background-color: rgba(128, 128, 128, 0.084);
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Main--sign .textarea .area {
+  width: 600px;
+  height: 200px;
+  margin-top: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.Main--sign .textarea .submit {
+  width: 130px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
 }
 
 /*making footer*/
 .Footer {
-  height: 350px;
+  height: 220px;
   width: 100%;
   background-color: black;
   display: flex;
@@ -420,6 +273,10 @@ time, mark, audio, video {
 .header--nav--element:hover {
   text-decoration: underline;
   color: rgb(181, 160, 0);
+}
+
+.Main--sign .textarea .submit:hover {
+  background-color: rgb(150, 119, 41);
 }
 
 .Footer--links .Menu .footlinks:hover {

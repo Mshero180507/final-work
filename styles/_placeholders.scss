@@ -107,8 +107,7 @@
 
 %customcarousel-text--first{
     display: inline;
-    font-size: 70px;
-    font-family: "Charm", serif;
+    @include text(70px);
 }
 
 %customcarousel-text--second{
@@ -128,9 +127,7 @@
 }
 
 %customTitle{
-    font-size: 36px;
-    font-weight: 400;
-    font-family: "Charm", serif;
+    @include text(36px);
     margin-left: 30px;
     margin-top: 20px;
 
@@ -144,9 +141,7 @@
 }
 
 %customText{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "Charm", serif;
+    @include text(20px);
     color: #565151;
 }
 
@@ -200,28 +195,179 @@
     display: flex;
 }
 
-%customMain--third--cards{
+/*making cards*/
+%customMain--third--cards {
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap:26px;
 }
 
 %customCard{
-    width: 200px;
+    position: relative;
+}
+
+%customCardpic{
+    width: 220px;
     height: 260px;
-    margin-left: 50px;
-	background-image: url("./../images/frida.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    position:relative;
+    
+}
+
+%customCardtext{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    background-color:#565151cc;
 }
 
 
+/*making fourth section*/
 %customMain--fourth{
     @include sections(rgba(226, 226, 226, 0.505));
+    flex-direction: column;
 }
 
+%customMain--fourth--text{
+    display: flex;
+}
+
+%customFourth-cards-pic{
+    width: 300px;
+}
+
+%customfourth-cards{
+    background-color: white;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+%customfourth-text{
+    @include text(36px);
+}
+
+%fourth-par{
+    font-weight: 400;
+    font-size: 20px;
+    font-family:none;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+%customMain--fourth--cards{
+    display: flex;
+    gap: 40px;
+    justify-content:space-around
+}
+
+/*making fifth section*/
 %customMain--fifth{
     @include sections(white);
+}
+
+/*making sixth section*/
+%customMain--sixth{
+    @include sections(rgb(0, 0, 0));
+    gap: 250px;
+}
+
+%customsixthpic{
+    height: auto;
+}
+
+%customsixthtext{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+%customtexticon{
+    @include text(26px);
+    color: white;
+}
+
+%customfa-check{
+    color: white;
+    margin-top:8px;
+    margin-right: 10px;
+}
+
+
+
+
+/*making seventh section*/
+%customMain--seventh{
+    @include sections(white);
+}
+
+
+/*making footer*/
+%customFooter{
+    height: 350px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+%customfootertext{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pacifico", serif;
+    margin-bottom: 20px;
+}
+
+%customfooterpar{
+    @include text2(20px, white);
+    margin-bottom:30px;
+}
+
+%customFooter--logo{
+    width: 400px;
+}
+
+%customFooter--links{
+    display: flex;
+    gap: 80px;
+}
+
+%customfoottext{
+    @include text(30px);
+    color:white;
+}
+
+%customfootlinks{
+    @include text2(20px, white);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+%customMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+%customsponsors{
+    display: flex;
+    flex-direction: column;
+}
+
+%customfooter--logo{
+    width: 70px;
+}
+
+%customfooterlinks{
+    display: flex;
+    gap: 25px;
+}
+
+%customlinks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+%customlinkstext{
+    @include text2(16px, white);
 }

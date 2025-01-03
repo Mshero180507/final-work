@@ -1,11 +1,3 @@
-@mixin sections($color){
-    display: flex;
-    height: 800px;
-    width: 100%;
-    padding: 70px;
-    background-color: $color;
-}
-
 @mixin text($size){
     font-weight: 700;
     font-size: $size;

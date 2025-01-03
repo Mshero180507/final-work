@@ -1,0 +1,182 @@
+@import "reset";
+@import "placeholders";
+@import "mixins";
+
+.header{
+    @extend %customheader;
+    &--name{
+        @extend %customheader--name;
+    }
+
+    &--form{
+        @extend %customheader--form;
+        @extend %customsearch-button;
+    }
+
+    &--account{
+        &:hover {
+            background-color:rgb(181, 160, 0);
+            width: 155px;
+            height: 65px;
+        }
+
+        @extend %customheader--account;
+        
+
+        .fa-user{
+            @extend %customfa-user;
+        }
+        
+        &--profile{
+            @extend %customheader--account--profile;
+        }
+    }
+
+    &--line{
+        @extend %customheader--line;
+    }
+
+    &--nav{
+        &--element{
+            @extend %customheader--nav--element;
+            &:hover {
+                text-decoration:underline;
+                color:rgb(181, 160, 0);
+            }
+        }
+    }
+}
+
+.Main{
+    @extend %customMain;
+    &--map{
+        .Maintext{
+            @extend %customMaintext;
+        }
+        .contacts{
+            @extend %customcontacts;
+            .phone{
+                .number{
+                    @extend %customnumber;
+                }
+            } 
+
+            .time{
+                .number{
+                    @extend %customnumber;
+                }
+            
+            }
+        }
+    }
+
+
+    &--sign{
+        @extend %customMain--sign;
+        .signtext{
+            @extend %customsigntext;
+            .Maintext{
+                @extend %customMaintext;
+            }
+            .number{
+                @extend %customnumber;
+            }
+        }
+        .signup{
+            @extend %customsignup;
+            .name{
+                @extend %customname;
+                .form-els{
+                    @extend %customform-els;
+                }
+            }
+            .email{
+                @extend %customname;
+                .form-els{
+                    @extend %customform-els;
+                }
+            }
+        }
+        .textarea{
+            @extend %customtextarea;
+            .area{
+                @extend %customarea;
+            }
+            .submit{
+                @extend %customsubmit;
+                &:hover{
+                    background-color: rgb(150, 119, 41);
+                }
+            }
+        }
+    }
+}
+
+.Footer{
+    @extend %customFooter;
+
+    &--logo{
+        @extend %customFooter--logo;
+        .footertext{
+            @extend %customfootertext;
+        }
+        .footerpar{
+            @extend %customfooterpar;
+        }
+        .footerlinks{
+            @extend %customfooterlinks;
+            .links{
+                @extend %customlinks;
+                .linkstext{
+                    @extend %customlinkstext;
+                }
+            }
+        }
+    }
+
+    &--links{
+        @extend %customFooter--links;
+        .Menu{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+            }
+        }
+        .resources{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+            }
+            
+        }
+    }
+
+    &--sponsors{
+        @extend %customsponsors;
+        .spontext{
+            @extend %customfoottext;
+        }
+        .footer--logo{
+            @extend %customfooter--logo;
+            &:hover{
+                width: 75px;
+            }
+        }
+    }
+    
+}
+
+
+

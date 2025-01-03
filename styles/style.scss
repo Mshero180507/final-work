@@ -4,12 +4,6 @@
 
 .header{
     @extend %customheader;
-
-    // &--logo {
-    //     @extend %customheader--logo;
-    //     @extend %customheader--img;
-    // }
-
     &--name{
         @extend %customheader--name;
     }
@@ -141,8 +135,17 @@
 
         &--cards{
             @extend %customMain--third--cards;
+
             .Card{
                 @extend %customCard;
+
+                .Cardpic{
+                    @extend %customCardpic;
+                }
+
+                .Cardtext{
+                    @extend %customCardtext;
+                }
             }
         }
     }
@@ -151,9 +154,128 @@
 
     &--fourth{
         @extend %customMain--fourth;
+        .Title{
+            @extend %customTitle;
+        }
+
+        .Text{
+            @extend %customText;
+        }
+
+        &--cards{
+            @extend %customMain--fourth--cards;
+            .fourth-cards{
+                @extend %customfourth-cards;
+                .Fourth-cards-pic{
+                    @extend %customFourth-cards-pic;
+                }
+                .fourth-text{
+                    @extend %customfourth-text;
+                }
+                .fourth-par{
+                    @extend %fourth-par;
+                }
+            }
+        }
     }
 
     &--fifth{
         @extend %customMain--fifth;
     }
+
+    &--sixth{
+        @extend %customMain--sixth;
+
+        .sixthtext{
+            @extend %customsixthtext;
+            .Title{
+                @extend %customTitle;
+            }
+            .Text{
+                @extend %customText;
+            }
+            .icontext{
+                .texticon{
+                    @extend %customtexticon;
+                }
+                .fa-check{
+                    @extend %customfa-check;
+                }
+            }
+    
+        }
+        .sixthpic{
+            @extend %customsixthpic;
+        }
+    }
+
+    &--seventh{
+        @extend %customMain--seventh;
+    }
+}
+
+.Footer{
+    @extend %customFooter;
+
+    &--logo{
+        @extend %customFooter--logo;
+        .footertext{
+            @extend %customfootertext;
+        }
+        .footerpar{
+            @extend %customfooterpar;
+        }
+        .footerlinks{
+            @extend %customfooterlinks;
+            .links{
+                @extend %customlinks;
+                .linkstext{
+                    @extend %customlinkstext;
+                }
+            }
+        }
+    }
+
+    &--links{
+        @extend %customFooter--links;
+        .Menu{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+            }
+        }
+        .resources{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+            }
+            
+        }
+    }
+
+    &--sponsors{
+        @extend %customsponsors;
+        .spontext{
+            @extend %customfoottext;
+        }
+        .footer--logo{
+            @extend %customfooter--logo;
+            &:hover{
+                width: 75px;
+            }
+        }
+    }
+    
 }
