@@ -325,23 +325,26 @@
 
 %customcommentfoot{
     display: flex;
-    gap: 50px;
+    gap: 10px;
 }
 
 %customcommentpic{
     width: 50px;
+    height: 50px;
     border-radius: 100%;
 }
-%customcommentname{
+
+%customCommentname{
     display: flex;
     flex-direction: column;
 }
 
-%customCname{
+%customcname{
     @include text(24px);
+    margin-bottom: 0;
 }
 
-%customCpar{
+%customcpar{
     @include text2(18px, grey)
 }
 

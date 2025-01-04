@@ -248,28 +248,28 @@
                 .eltext{
                     @extend %customeltext;
                 }
-                .elpar{
-                    @extend %customelpar;
-                }
+                // .elpar{
+                //     @extend %customelpar;
+                // }
                 .commentfoot{
                     @extend %customcommentfoot;
                     .commentpic{
                         @extend %customcommentpic;
                     }
-                    .commentname{
-                        @extend %customcommentname;
-                        .Cname{
-                            @extend %customCname;
+
+                    .Commentname{
+                        @extend %customCommentname;
+                        .cname{
+                            @extend %customcname;
                         }
-                        .Cpar{
-                            @extend %customCpar;
+                        .cpar{
+                            @extend %customcpar;
                         }
                     }
-                    .commenttime{
-                        @extend %customcommenttime;
-                    }
+
                 }
             }
+            
         }
 
     }
