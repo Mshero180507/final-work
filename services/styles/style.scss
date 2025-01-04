@@ -1,5 +1,5 @@
 @import "reset";
-@import "placeholders";
+@import "placeholder";
 @import "mixins";
 
 .header{
@@ -67,70 +67,6 @@
     }
 }
 
-.Main{
-    @extend %customMain;
-    &--map{
-        .Maintext{
-            @extend %customMaintext;
-        }
-        .contacts{
-            @extend %customcontacts;
-            .phone{
-                .number{
-                    @extend %customnumber;
-                }
-            } 
-
-            .time{
-                .number{
-                    @extend %customnumber;
-                }
-            
-            }
-        }
-    }
-
-
-    &--sign{
-        @extend %customMain--sign;
-        .signtext{
-            @extend %customsigntext;
-            .Maintext{
-                @extend %customMaintext;
-            }
-            .number{
-                @extend %customnumber;
-            }
-        }
-        .signup{
-            @extend %customsignup;
-            .name{
-                @extend %customname;
-                .form-els{
-                    @extend %customform-els;
-                }
-            }
-            .email{
-                @extend %customname;
-                .form-els{
-                    @extend %customform-els;
-                }
-            }
-        }
-        .textarea{
-            @extend %customtextarea;
-            .area{
-                @extend %customarea;
-            }
-            .submit{
-                @extend %customsubmit;
-                &:hover{
-                    background-color: rgb(150, 119, 41);
-                }
-            }
-        }
-    }
-}
 
 .Footer{
     @extend %customFooter;
@@ -228,4 +164,8 @@
         }
     }
     
+}
+
+.main{
+    @extend %custommain;
 }

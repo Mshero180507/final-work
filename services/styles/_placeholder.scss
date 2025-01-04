@@ -1,6 +1,5 @@
 @import "mixins";
 
-/*header*/
 %customheader{
     height: 150px;
     padding: 18px 80px;
@@ -89,141 +88,14 @@
     margin-right: 40px;
 }
 
-/*making main page*/
-%customMain{
-    margin-top:170px;
-}
-
-%customcarousel-image-container{
-    width: 90%;
-    margin-left: 80px;
-    position: relative;
-}
-
-%customcarousel-text{
-    width: 50%;
-    position: absolute;
-    top: 40%;  
-    left: 30px; 
-    color: white;  
-    padding: 20px;
-}
-
-%customcarousel-text--first{
-    display: inline;
-    @include text(70px);
-}
-
-%customcarousel-text--second{
-
-    font-size: 20px;
-    width: 85%;
-}
-
-%custombutton{
-    background-color: black;
-    width: 150px;
-    height: 60px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-%custombuttontext{
-    color: white;
-    font-size: 18px;
-}
-
-/*body*/
-%customMain{
-    padding-top: 50px;
-    padding-left: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 170px;
-    height: 900px;
-}
-
-%customMaintext{
-    @include text(36px);
-    margin-bottom: 25px;
-}
-
-%customcontacts{
-    display: flex;
-    gap: 70px;
-    margin-bottom: 50px;
-}
-
-
-%customnumber{
-    @include text2(20px, grey);
-    margin-bottom: 10px;
-}
-
-/*second part of the body*/
-%customMain--sign{
-    display: flex;
-    flex-direction: column;
-}
-
-%customsigntext{
-    width: 700px;
-}
-
-%customsignup{
-    width: 700px;
-    height: 80px;
-    background-color: rgba(128, 128, 128, 0.084);
-    padding: 40px 40px ;
-    display: flex;
-    gap: 30px;
-}
-
-%customname{
-    display: inline;
-}
-
-%customform-els{
-    width: 270px;
-    height: 30px;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-%customtextarea{
-    width: 700px;
-    height: 350px;
-    background-color: rgba(128, 128, 128, 0.084);
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-%customarea{
-    width: 600px;
-    height: 200px;
-    margin-top: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-%customsubmit{
-    width: 130px;
-    height: 50px;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    border: none;
-}
 
 /*making footer*/
 %customFooter{
+    height: 350px;
+    width: 100%;
     background-color: black;
     display: flex;
-    gap: 80px;
+    gap: 100px;
     flex-wrap: wrap;
     padding: 60px;
 }
@@ -253,7 +125,6 @@
 %customfoottext{
     @include text(30px);
     color:white;
-    margin-bottom: 20px;
 }
 
 %customfootlinks{
@@ -296,4 +167,10 @@
     height: 210px;
     background-color: rgb(175, 170, 170);
     margin-top: 20px;
+}
+
+%custommain{
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 170px;
 }

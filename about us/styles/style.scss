@@ -1,6 +1,6 @@
-@import "reset";
-@import "placeholders";
 @import "mixins";
+@import "placeholder";
+@import "reset";
 
 .header{
     @extend %customheader;
@@ -67,45 +67,8 @@
     }
 }
 
-
 .Main{
     @extend %customMain;
-    .carousel-image-container{
-        @extend %customcarousel-image-container;
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            margin-left: 0px;
-            width: 100%;
-        }
-    .carousel-text{
-        @extend %customcarousel-text;
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            top: 30%;
-        }
-
-        .carousel-text--first{
-            @extend %customcarousel-text--first;
-            @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                @include text(50px);
-            }
-        }
-
-        .carousel-text--second{
-           @extend %customcarousel-text--second;
-        }
-        .button{
-            @extend %custombutton;
-            &:hover{
-                background-color: rgb(148, 114, 28);
-                width: 155px;
-                height: 65px;
-            }
-            .buttontext{
-                @extend %custombuttontext;
-            }
-        }
-    }
-    }
-
     &--first{
         @extend %customMain--first;
         @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -166,28 +129,6 @@
                     height: 270px;
                 }
             }
-            .circle{
-                @extend %customcircle;
-                &:hover{
-                    width: 160px;
-                    height: 160px;
-                }
-                @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                    width: 80px;
-                    height: 80px;
-                    left:-35px;
-                    bottom: 60px;
-                }
-                &:hover{
-                    background-color: rgb(140, 111, 40);
-                }
-                .learn{
-                    @extend %customlearn;
-                    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                        font-size: 12px;
-                    }
-                }
-            }
         }
     }
 
@@ -239,169 +180,6 @@
             }
         }
     }
-
-    &--third{
-        @extend %customMain--third;
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            padding-top: 100px;
-            padding: 50px;
-            height: 550px;
-        }
-
-        .Title{
-            @extend %customTitle;
-            margin-bottom: 16px !important;
-        }
-
-        .Text{
-            @extend %customText;
-        }
-
-        &--cards{
-            @extend %customMain--third--cards;
-            @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                gap: 10px;
-                width: 750px;
-            }
-
-            .Card{
-                @extend %customCard;
-
-                .Cardpic{
-                    &:hover{
-                        height: 265px;
-                        width: 230px;
-                    }
-                    @extend %customCardpic;
-                    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                        width: 120px;
-                        height: 150px;
-                    }
-                }
-
-                .Cardtext{
-                    @extend %customCardtext;
-                    .cardname{
-                        @extend %customcardname;
-                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                            font-size: 20px; 
-                        }
-                    }
-                    .pa{
-                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                            display: none;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-
-
-
-    &--fourth{
-        @extend %customMain--fourth;
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            padding-top: 100px;
-            padding: 50px;
-            height: 570px;
-        }
-        .Title{
-            @extend %customTitle;
-        }
-
-        .Text{
-            @extend %customText;
-        }
-
-        &--cards{
-            @extend %customMain--fourth--cards;
-            @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                gap: 20px;
-                justify-content:left;
-            }
-            .fourth-cards{
-                @extend %customfourth-cards;
-                @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                    width: 180px;
-                }
-                .Fourth-cards-pic{
-                    &:hover{
-                        width: 320px;
-                    }
-                    @extend %customFourth-cards-pic;
-                    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                        width: 180px;
-                    }
-                }
-                .cardcontent{
-                    @extend %customcardcontent;
-                    .fourth-text{
-                        @extend %customfourth-text;
-                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                            @include text(20px);
-                        }
-                    }
-                    .fourth-par{
-                        @extend %fourth-par;
-                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                            font-size: 14px;
-                        }
-                    }
-                } 
-                .cardbutton{
-                    @extend %customcardbutton;
-                    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                        width: 70px;
-                        height: 30px;
-                    }
-                    &:hover{
-                        background-color: rgba(146, 113, 30, 0.916);
-                    }
-                    .cardd{
-                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                            font-size: 12px;
-                        }
-                        @extend %customcardd;
-                    }
-                }
-            }
-        }
-    }
-
-    &--fifth{
-        @extend %customMain--fifth;
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            padding-top: 100px;
-            padding: 50px;
-            height: 570px;
-        }
-        .Title{
-            @extend %customTitle;
-        }
-
-        .Text{
-            @extend %customText;
-        }
-
-        &--cards{
-            @extend %customMain--fourth--cards;
-            .fourth-cards{
-                @extend %customfourth-cards;
-                .Fourth-cards-pic{
-                    @extend %customFourth-cards-pic;
-                }
-                .fourth-text{
-                    @extend %customfourth-text;
-                }
-                .fourth-par{
-                    @extend %fourth-par;
-                }
-            }
-        }
-    }
-
     &--sixth{
         @extend %customMain--sixth;
         padding:90px ;
@@ -467,10 +245,6 @@
                 gap: 20px;
             }
             .elements{
-                &:hover{
-                    width: 470px;
-                    height: 320px; 
-                }
                 @extend %customelements;
                 @media only screen and (min-width: 601px) and (max-width: 1024px) {
                     width: 250px;
@@ -523,6 +297,7 @@
         }
 
     }
+
 }
 
 .Footer{

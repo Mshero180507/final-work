@@ -1,24 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
 .header {
   height: 150px;
   padding: 18px 80px;
@@ -100,48 +79,6 @@ time, mark, audio, video {
   margin-top: 170px;
 }
 
-.Main .carousel-image-container {
-  width: 90%;
-  margin-left: 80px;
-  position: relative;
-}
-
-.Main .carousel-image-container .carousel-text {
-  width: 50%;
-  position: absolute;
-  top: 40%;
-  left: 30px;
-  color: white;
-  padding: 20px;
-}
-
-.Main .carousel-image-container .carousel-text .carousel-text--first {
-  display: inline;
-  font-weight: 700;
-  font-size: 70px;
-  font-family: "Charm", serif;
-}
-
-.Main .carousel-image-container .carousel-text .carousel-text--second {
-  font-size: 20px;
-  width: 85%;
-}
-
-.Main .carousel-image-container .carousel-text .button {
-  background-color: black;
-  width: 150px;
-  height: 60px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Main .carousel-image-container .carousel-text .button .buttontext {
-  color: white;
-  font-size: 18px;
-}
-
 /*section first*/
 .Main--first {
   display: flex;
@@ -149,15 +86,15 @@ time, mark, audio, video {
   width: 100%;
   padding: 70px;
   background-color: white;
-  padding-top: 170px;
+  padding-top: 100px;
 }
 
 .Main--first .Girl {
-  height: 400px;
+  height: 450px;
   margin-right: 50px;
 }
 
-.Main--seventh .Title, .Main--sixth .sixthtext .Title, .Main--fifth .Title, .Main--fourth .Title, .Main--third .Title, .Main--second--text .Title, .Main--first--text .Title {
+.Main--seventh .Title, .Main--sixth .sixthtext .Title, .Main--second--text .Title, .Main--first--text .Title {
   font-weight: 700;
   font-size: 36px;
   font-family: "Charm", serif;
@@ -172,7 +109,7 @@ time, mark, audio, video {
   margin-right: 50px;
 }
 
-.Main--seventh .Text, .Main--sixth .sixthtext .Text, .Main--fifth .Text, .Main--fourth .Text, .Main--third .Text, .Main--second--text .Text, .Main--first--text .Text {
+.Main--seventh .Text, .Main--sixth .sixthtext .Text, .Main--second--text .Text, .Main--first--text .Text {
   font-weight: 700;
   font-size: 20px;
   font-family: "Charm", serif;
@@ -180,27 +117,8 @@ time, mark, audio, video {
 }
 
 .Main--first .bird .Peacock {
-  height: 400px;
+  height: 500px;
   margin-top: 100px;
-}
-
-.Main--first .bird .circle {
-  background-color: black;
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  bottom: 100px;
-  left: -70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Main--first .bird .circle .learn {
-  font-size: 26px;
-  color: white;
-  text-decoration: none;
 }
 
 .Main--first--text .tables {
@@ -245,116 +163,6 @@ time, mark, audio, video {
 .Main--second--text .Boldtext {
   font-size: 20px;
   font-weight: 700;
-}
-
-/*third section*/
-.Main--third {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: white;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-/*making cards*/
-.Main--third--cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 26px;
-}
-
-.Main--third--cards .Card {
-  position: relative;
-}
-
-.Main--third--cards .Card .Cardpic {
-  width: 220px;
-  height: 260px;
-}
-
-.Main--third--cards .Card .Cardtext {
-  position: absolute;
-  bottom: 10px;
-  color: white;
-  background-color: rgba(86, 81, 81, 0.8);
-}
-
-/*making fourth section*/
-.Main--fourth {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: rgba(226, 226, 226, 0.505);
-  flex-direction: column;
-}
-
-.Main--fifth--cards .fourth-cards .Fourth-cards-pic, .Main--fourth--cards .fourth-cards .Fourth-cards-pic {
-  width: 300px;
-}
-
-.Main--fourth--cards .fourth-cards .cardcontent {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.Main--fifth--cards .fourth-cards, .Main--fourth--cards .fourth-cards {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 5px;
-}
-
-.Main--fifth--cards .fourth-cards .fourth-text, .Main--fourth--cards .fourth-cards .cardcontent .fourth-text {
-  font-weight: 700;
-  font-size: 36px;
-  font-family: "Charm", serif;
-}
-
-.Main--fifth--cards .fourth-cards .fourth-par, .Main--fourth--cards .fourth-cards .cardcontent .fourth-par {
-  font-weight: 400;
-  font-size: 20px;
-  font-family: none;
-  color: grey;
-}
-
-.Main--fifth--cards, .Main--fourth--cards {
-  display: flex;
-  gap: 40px;
-  justify-content: space-around;
-}
-
-.Main--fourth--cards .fourth-cards .cardbutton {
-  width: 100px;
-  height: 40px;
-  border: #333 2px solid;
-  border-radius: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.Main--fourth--cards .fourth-cards .cardbutton .cardd {
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  color: black;
-  margin-top: 5px;
-}
-
-/*making fifth section*/
-.Main--fifth {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  padding: 70px;
-  background-color: white;
-  flex-direction: column;
 }
 
 /*making sixth section*/
@@ -545,6 +353,27 @@ time, mark, audio, video {
   margin-top: 20px;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 @media only screen and (min-width: 1025px) {
   .header {
     padding: 20px 60px;
@@ -583,29 +412,6 @@ time, mark, audio, video {
   color: rgb(181, 160, 0);
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main .carousel-image-container {
-    margin-left: 0px;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main .carousel-image-container .carousel-text {
-    top: 30%;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main .carousel-image-container .carousel-text .carousel-text--first {
-    font-weight: 700;
-    font-size: 50px;
-    font-family: "Charm", serif;
-  }
-}
-.Main .carousel-image-container .carousel-text .button:hover {
-  background-color: rgb(148, 114, 28);
-  width: 155px;
-  height: 65px;
-}
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .Main--first {
     padding-top: 100px;
@@ -655,26 +461,6 @@ time, mark, audio, video {
     height: 270px;
   }
 }
-.Main--first .bird .circle:hover {
-  width: 160px;
-  height: 160px;
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--first .bird .circle {
-    width: 80px;
-    height: 80px;
-    left: -35px;
-    bottom: 60px;
-  }
-}
-.Main--first .bird .circle:hover {
-  background-color: rgb(140, 111, 40);
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--first .bird .circle .learn {
-    font-size: 12px;
-  }
-}
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .Main--second {
     padding-top: 100px;
@@ -712,101 +498,6 @@ time, mark, audio, video {
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .Main--second--text .Boldtext {
     font-size: 15px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--third {
-    padding-top: 100px;
-    padding: 50px;
-    height: 550px;
-  }
-}
-.Main--third .Title {
-  margin-bottom: 16px !important;
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--third--cards {
-    gap: 10px;
-    width: 750px;
-  }
-}
-.Main--third--cards .Card .Cardpic:hover {
-  height: 265px;
-  width: 230px;
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--third--cards .Card .Cardpic {
-    width: 120px;
-    height: 150px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--third--cards .Card .Cardtext .cardname {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--third--cards .Card .Cardtext .pa {
-    display: none;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth {
-    padding-top: 100px;
-    padding: 50px;
-    height: 570px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards {
-    gap: 20px;
-    justify-content: left;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards .fourth-cards {
-    width: 180px;
-  }
-}
-.Main--fourth--cards .fourth-cards .Fourth-cards-pic:hover {
-  width: 320px;
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards .fourth-cards .Fourth-cards-pic {
-    width: 180px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards .fourth-cards .cardcontent .fourth-text {
-    font-weight: 700;
-    font-size: 20px;
-    font-family: "Charm", serif;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards .fourth-cards .cardcontent .fourth-par {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards .fourth-cards .cardbutton {
-    width: 70px;
-    height: 30px;
-  }
-}
-.Main--fourth--cards .fourth-cards .cardbutton:hover {
-  background-color: rgba(146, 113, 30, 0.916);
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fourth--cards .fourth-cards .cardbutton .cardd {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .Main--fifth {
-    padding-top: 100px;
-    padding: 50px;
-    height: 570px;
   }
 }
 .Main--sixth {
@@ -854,10 +545,6 @@ time, mark, audio, video {
   .Main--seventh .comments {
     gap: 20px;
   }
-}
-.Main--seventh .comments .elements:hover {
-  width: 470px;
-  height: 320px;
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .Main--seventh .comments .elements {

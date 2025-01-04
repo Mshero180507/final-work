@@ -19,7 +19,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/*header*/
 .header {
   height: 150px;
   padding: 18px 80px;
@@ -96,104 +95,13 @@ time, mark, audio, video {
   margin-right: 40px;
 }
 
-/*making main page*/
-.Main {
-  margin-top: 170px;
-}
-
-/*body*/
-.Main {
-  padding-top: 50px;
-  padding-left: 75px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 170px;
-  height: 900px;
-}
-
-.Main--sign .signtext .Maintext, .Main--map .Maintext {
-  font-weight: 700;
-  font-size: 36px;
-  font-family: "Charm", serif;
-  margin-bottom: 25px;
-}
-
-.Main--map .contacts {
-  display: flex;
-  gap: 70px;
-  margin-bottom: 50px;
-}
-
-.Main--sign .signtext .number, .Main--map .contacts .time .number, .Main--map .contacts .phone .number {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: none;
-  color: grey;
-  margin-bottom: 10px;
-}
-
-/*second part of the body*/
-.Main--sign {
-  display: flex;
-  flex-direction: column;
-}
-
-.Main--sign .signtext {
-  width: 700px;
-}
-
-.Main--sign .signup {
-  width: 700px;
-  height: 80px;
-  background-color: rgba(128, 128, 128, 0.084);
-  padding: 40px 40px;
-  display: flex;
-  gap: 30px;
-}
-
-.Main--sign .signup .email, .Main--sign .signup .name {
-  display: inline;
-}
-
-.Main--sign .signup .email .form-els, .Main--sign .signup .name .form-els {
-  width: 270px;
-  height: 30px;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.Main--sign .textarea {
-  width: 700px;
-  height: 350px;
-  background-color: rgba(128, 128, 128, 0.084);
-  padding: 40px 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.Main--sign .textarea .area {
-  width: 600px;
-  height: 200px;
-  margin-top: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.Main--sign .textarea .submit {
-  width: 130px;
-  height: 50px;
-  color: white;
-  background-color: black;
-  border-radius: 10px;
-  border: none;
-}
-
 /*making footer*/
 .Footer {
+  height: 350px;
+  width: 100%;
   background-color: black;
   display: flex;
-  gap: 80px;
+  gap: 100px;
   flex-wrap: wrap;
   padding: 60px;
 }
@@ -228,7 +136,6 @@ time, mark, audio, video {
   font-size: 30px;
   font-family: "Charm", serif;
   color: white;
-  margin-bottom: 20px;
 }
 
 .Footer--links .resources .footlinks, .Footer--links .Menu .footlinks {
@@ -279,6 +186,12 @@ time, mark, audio, video {
   margin-top: 20px;
 }
 
+.main {
+  height: 1000px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 170px;
+}
+
 @media only screen and (min-width: 1025px) {
   .header {
     padding: 20px 60px;
@@ -315,10 +228,6 @@ time, mark, audio, video {
 .header--nav--element:hover {
   text-decoration: underline;
   color: rgb(181, 160, 0);
-}
-
-.Main--sign .textarea .submit:hover {
-  background-color: rgb(150, 119, 41);
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
