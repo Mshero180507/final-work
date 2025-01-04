@@ -797,16 +797,133 @@ time, mark, audio, video {
     padding-top: 100px;
     padding: 50px;
     height: 500px;
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--sixth .sixthtext {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--sixth .sixthtext .Title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--sixth .sixthtext .Text {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--sixth .sixthtext .icontext .texticon {
+    font-size: 18px;
   }
 }
 .Main--seventh {
   height: 600px;
 }
+@media only screen and (max-width: 1024px) {
+  .Main--seventh {
+    padding-top: 100px;
+    padding: 50px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements .eltext {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements .elpar {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements .commentfoot {
+    gap: 7px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements .commentfoot .commentpic {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements .commentfoot .Commentname .cname {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Main--seventh .comments .elements .commentfoot .Commentname .cpar {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Footer {
+    padding: 40px;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--logo {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--logo .footertext {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--logo .footerpar {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--links .Menu .foottext {
+    font-size: 20px;
+  }
+}
 .Footer--links .Menu .footlinks:hover {
   text-decoration: underline;
 }
+@media only screen and (max-width: 1024px) {
+  .Footer--links .Menu .footlinks {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--links .resources .foottext {
+    font-size: 20px;
+  }
+}
 .Footer--links .resources .footlinks:hover {
   text-decoration: underline;
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--links .resources .footlinks {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Footer--sponsors .spontext {
+    font-size: 20px;
+  }
 }
 .Footer--sponsors .footer--logo:hover {
   width: 75px;
