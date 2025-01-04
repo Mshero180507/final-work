@@ -4,13 +4,30 @@
 
 .header{
     @extend %customheader;
+    @media only screen and (max-width:1024px){
+        padding: 18px 50px;;
+    }
     &--name{
         @extend %customheader--name;
+        @media only screen and (max-width:1024px){
+            margin-right: 150px;
+        }
     }
 
     &--form{
         @extend %customheader--form;
-        @extend %customsearch-button;
+        @media only screen and (max-width:1024px){
+            width: 300px;
+            padding-left: 10px;
+        }
+        .search-button{
+            @extend %customsearch-button;
+            @media only screen and (max-width:1024px){
+                font-size: 15px !important;
+                margin-right: 70px;
+                margin-left: 0px;
+            }
+        }    
     }
 
     &--account{
@@ -47,45 +64,89 @@
     }
 }
 
+
 .Main{
     @extend %customMain;
     .carousel-image-container{
         @extend %customcarousel-image-container;
+        @media only screen and (max-width:1024px){
+            margin-left: 0px;
+            width: 100%;
+        }
     .carousel-text{
         @extend %customcarousel-text;
+        @media only screen and (max-width:1024px){
+            top: 30%;
+        }
 
         .carousel-text--first{
             @extend %customcarousel-text--first;
+            @media only screen and (max-width:1024px){
+                @include text(50px);
+            }
         }
 
         .carousel-text--second{
            @extend %customcarousel-text--second;
+        }
+        .button{
+            @extend %custombutton;
+            &:hover{
+                background-color: rgb(148, 114, 28)
+            }
+            .buttontext{
+                @extend %custombuttontext;
+            }
         }
     }
     }
 
     &--first{
         @extend %customMain--first;
-
+        @media only screen and (max-width:1024px){
+            padding-top: 100px;
+            padding: 50px;
+            height: 500px;
+        }
         .Girl{
             @extend %customGirl;
+            @media only screen and (max-width:1024px){
+                height: 250px;
+                margin-right: 20px;
+            }
         }
 
         &--text{
             @extend %customMain--first--text;
-            
+            @media only screen and (max-width:1024px){
+                width: 250px;
+            }
             .Title{
                 @extend %customTitle;
+                @media only screen and (max-width:1024px){
+                    @include text(25px);
+                    margin-top: 10px;
+                    margin-left: 0;
+                }
             } 
 
             .Text{
                 @extend %customText;
+                @media only screen and (max-width:1024px){
+                    @include text(15px);
+                }
             } 
 
             .tables{
                 @extend %customtables;
+                @media only screen and (max-width:1024px){
+                    gap: 50px;
+                }
                 .Table1{
                     @extend %customTable1;
+                    @media only screen and (max-width:1024px){
+                        margin-left: 20px;
+                    }
                 }
                 .Table2{
                     @extend %customTable2;
@@ -93,23 +154,68 @@
             }
         }
 
-        .Peacock{
-            @extend %customPeacock;
+        .bird{
+            .Peacock{
+                @extend %customPeacock; 
+                @media only screen and (max-width:1024px){
+                    height: 270px;
+                }
+            }
+            .circle{
+                @extend %customcircle;
+                @media only screen and (max-width:1024px){
+                    width: 80px;
+                    height: 80px;
+                    left:-35px;
+                    bottom: 60px;
+                }
+                &:hover{
+                    background-color: rgb(140, 111, 40);
+                }
+                .learn{
+                    @extend %customlearn;
+                    @media only screen and (max-width:1024px){
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 
     &--second{
         @extend %customMain--second;
+        @media only screen and (max-width:1024px){
+            padding-top: 100px;
+            padding: 50px;
+            height: 500px;
+            gap: 30px;
+        }
+        .secondpic{
+            @extend %customsecondpic;
+            @media only screen and (max-width:1024px){
+                width: auto;
+                height: 360px;
+            }
+        }
 
         &--text{
             @extend %customMain--second--text;
-
+            @media only screen and (max-width:1024px){
+                width: 350px;
+            }
             .Title{
                 @extend %customTitle;
+                @media only screen and (max-width:1024px){
+                    @include text(25px);
+                    margin:0;
+                }
             }
 
             .Text{
                 @extend %customText;
+                @media only screen and (max-width:1024px){
+                    @include text(15px);
+                }
             }
 
             .fa-arrow-right{
@@ -118,15 +224,24 @@
 
             .Boldtext{
                 @extend %customBoldtext;
+                @media only screen and (max-width:1024px){
+                    font-size: 15px;
+                }
             }
         }
     }
 
     &--third{
         @extend %customMain--third;
+        @media only screen and (max-width:1024px){
+            padding-top: 100px;
+            padding: 50px;
+            height: 550px;
+        }
 
         .Title{
             @extend %customTitle;
+            margin-bottom: 16px !important;
         }
 
         .Text{
@@ -135,16 +250,34 @@
 
         &--cards{
             @extend %customMain--third--cards;
+            @media only screen and (max-width:1024px){
+                gap: 10px;
+                width: 750px;
+            }
 
             .Card{
                 @extend %customCard;
 
                 .Cardpic{
                     @extend %customCardpic;
+                    @media only screen and (max-width:1024px){
+                        width: 120px;
+                        height: 150px;
+                    }
                 }
 
                 .Cardtext{
                     @extend %customCardtext;
+                    .cardname{
+                        @extend %customcardname;
+                        @media only screen and (max-width:1024px){
+                            font-size: 20px; 
+                        }
+                    }
+                    .pa{
+                        display: none;
+                    }
+                    
                 }
             }
         }
@@ -154,6 +287,11 @@
 
     &--fourth{
         @extend %customMain--fourth;
+        @media only screen and (max-width:1024px){
+            padding-top: 100px;
+            padding: 50px;
+            height: 570px;
+        }
         .Title{
             @extend %customTitle;
         }
@@ -164,16 +302,51 @@
 
         &--cards{
             @extend %customMain--fourth--cards;
+            @media only screen and (max-width:1024px){
+                gap: 20px;
+                justify-content:left;
+            }
             .fourth-cards{
                 @extend %customfourth-cards;
+                @media only screen and (max-width:1024px){
+                    width: 180px;
+                }
                 .Fourth-cards-pic{
                     @extend %customFourth-cards-pic;
+                    @media only screen and (max-width:1024px){
+                        width: 180px;
+                    }
                 }
-                .fourth-text{
-                    @extend %customfourth-text;
-                }
-                .fourth-par{
-                    @extend %fourth-par;
+                .cardcontent{
+                    @extend %customcardcontent;
+                    .fourth-text{
+                        @extend %customfourth-text;
+                        @media only screen and (max-width:1024px){
+                            @include text(20px);
+                        }
+                    }
+                    .fourth-par{
+                        @extend %fourth-par;
+                        @media only screen and (max-width:1024px){
+                            font-size: 14px;
+                        }
+                    }
+                } 
+                .cardbutton{
+                    @extend %customcardbutton;
+                    @media only screen and (max-width:1024px){
+                        width: 70px;
+                        height: 30px;
+                    }
+                    &:hover{
+                        background-color: rgba(146, 113, 30, 0.916);
+                    }
+                    .cardd{
+                        @media only screen and (max-width:1024px){
+                            font-size: 12px;
+                        }
+                        @extend %customcardd;
+                    }
                 }
             }
         }
@@ -181,6 +354,11 @@
 
     &--fifth{
         @extend %customMain--fifth;
+        @media only screen and (max-width:1024px){
+            padding-top: 100px;
+            padding: 50px;
+            height: 570px;
+        }
         .Title{
             @extend %customTitle;
         }
@@ -208,7 +386,12 @@
 
     &--sixth{
         @extend %customMain--sixth;
-
+        padding:90px ;
+        @media only screen and (max-width:1024px){
+            padding-top: 100px;
+            padding: 50px;
+            height: 500px;
+        }
         .sixthtext{
             @extend %customsixthtext;
             .Title{
@@ -234,6 +417,7 @@
 
     &--seventh{
         @extend %customMain--seventh;
+        height: 600px;
         .Title{
             @extend %customTitle;
         }
@@ -248,9 +432,9 @@
                 .eltext{
                     @extend %customeltext;
                 }
-                // .elpar{
-                //     @extend %customelpar;
-                // }
+                .elpar{
+                    @extend %customelpar;
+                }
                 .commentfoot{
                     @extend %customcommentfoot;
                     .commentpic{
@@ -295,6 +479,10 @@
                 }
             }
         }
+    }
+
+    .verticalline{
+        @extend %customverticalline;
     }
 
     &--links{

@@ -29,6 +29,8 @@
     font-family: "Pacifico", serif;
     margin-right: 430px;
     margin-left: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 %customheader--form{
@@ -47,8 +49,8 @@
    font-size: 20px !important;
    font-weight: 400;
    color: #565151;
-   margin-left: 20px;
    padding-top: 10px;
+   margin-right:180px;
 }
 
 %customheader--account{
@@ -86,6 +88,7 @@
     margin-right: 40px;
 }
 
+/*making main page*/
 %customMain{
     margin-top:170px;
 }
@@ -116,6 +119,22 @@
     width: 85%;
 }
 
+%custombutton{
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%custombuttontext{
+    color: white;
+    font-size: 18px;
+}
+
+/*section first*/
 %customMain--first{
     @include sections(white);
     padding-top: 170px;
@@ -149,7 +168,24 @@
     height: 400px;
     margin-top: 100px;
 }
+%customcircle{
+    background-color: black;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    bottom: 100px;
+    left: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+%customlearn{
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+}
 
 %customtables{
     display: flex;
@@ -166,9 +202,16 @@
     display: inline;
 }
 
+
+/*making second section*/
 %customMain--second{
     gap: 80px;
     @include sections(rgba(226, 226, 226, 0.505));
+}
+
+%customsecondpic{
+    width: auto;
+    height: auto;
 }
 
 %customMain--second--text{
@@ -185,6 +228,7 @@
     font-weight: 700;
 }
 
+/*third section*/
 %customMain--third{
     @include sections(white);
     flex-wrap: wrap;
@@ -199,6 +243,7 @@
 %customMain--third--cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap:26px;
 }
 
@@ -219,7 +264,9 @@
     background-color:#565151cc;
 }
 
-
+%customcardname{
+    
+}
 /*making fourth section*/
 %customMain--fourth{
     @include sections(rgba(226, 226, 226, 0.505));
@@ -232,6 +279,11 @@
 
 %customFourth-cards-pic{
     width: 300px;
+}
+
+%customcardcontent{
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 %customfourth-cards{
@@ -249,13 +301,32 @@
     font-size: 20px;
     font-family:none;
     color: grey;
-    margin-bottom: 10px;
 }
 
 %customMain--fourth--cards{
     display: flex;
     gap: 40px;
     justify-content:space-around
+}
+
+%customcardbutton{
+    width: 100px;
+    height: 40px;
+    border:#333 2px solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+%customcardd{
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px
 }
 
 /*making fifth section*/
@@ -309,7 +380,7 @@
 %customelements{
     background-color: rgba(128, 128, 128, 0.129);
     width: 450px;
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
     margin-top: 20px;
     padding: 20px;
@@ -319,13 +390,13 @@
     @include text(26px);
 }
 
-// %customelpar{
-
-// }
+%customelpar{
+    margin-bottom: 50px;
+}
 
 %customcommentfoot{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 %customcommentpic{
@@ -419,4 +490,11 @@
 
 %customlinkstext{
     @include text2(16px, white);
+}
+
+%customverticalline{
+    width: 1px;
+    height: 210px;
+    background-color: rgb(175, 170, 170);
+    margin-top: 20px;
 }
