@@ -1,0 +1,29 @@
+@import "reset";
+@import "placeholder";
+.body{
+    @extend %custombody;
+    .signup-container{
+        @extend %customsignup-container;
+        .text{
+            @extend %customtext;
+        }
+        .form{
+            .input-field{
+                @extend %custominput-field;
+                &:focus{
+                    border-color: #4CAF50;
+                    outline: none;
+                }
+            }
+            .signup-btn{
+                @extend %customsignup-btn;
+                &:hover{
+                    background-color: #45a049;
+                }
+            }
+        }
+        .signup-footer{
+            @extend %customsignup-footer;
+        }
+    }
+}
