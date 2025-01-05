@@ -1,6 +1,6 @@
-@import "reset";
-@import "placeholder";
 @import "mixins";
+@import "placeholders";
+@import "reset";
 
 .header{
     @extend %customheader;
@@ -296,4 +296,3 @@
         }
     }
 }
-
