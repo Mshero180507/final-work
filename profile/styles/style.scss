@@ -1,3 +1,167 @@
 @import "reset";
 @import "placeholder";
 @import "mixins";
+
+.body{
+    @extend %custombody;
+    .links{
+        @extend %customlinks;
+        .linkelements{
+            @extend %customlinkelements;
+            .fas{
+                @extend %customfas;
+            }
+            .linkstext{
+                @extend %customlinkstext;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .profile{
+        @extend %customprofile;
+        .search{
+            @extend %customsearch;
+        }
+        .cover{
+            @extend %customcover;
+            .img{
+                @extend %customimg;
+                .photo{
+                    @extend %customphoto;
+                }
+                .circleimg{
+                    @extend %customcircleimg;
+                }
+                .button{
+                    @extend %custombutton;
+                    &:hover{
+                        background-color: rgb(218, 70, 218);
+                    }
+                    .buttontext{
+                        @extend %custombuttontext;
+                    }
+                }
+            }
+            .info{
+                @extend %custominfo;
+                .position{
+                    .postext{
+                        @extend %custompostext;
+                    }
+                    .pospar{
+                        @extend %custompospar;
+                    }
+                }
+                .button{
+                    @extend %custombutton;
+                    &:hover{
+                        background-color: rgb(218, 70, 218);
+                    }
+                    .buttontext{
+                        @extend %custombuttontext;
+                    }
+                }
+            }
+        }
+    }
+    .posts{
+        @extend %customposts;
+        .about{
+            @extend %customabout;
+            .abouttext{
+                @extend %customabouttext;
+            }
+            .linkelements{
+                @extend %customlinkelements;
+                .fas{
+                    @extend %customfas;
+                }
+                .linkstext{
+                    @extend %customlinkstext;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .postelement{
+            @extend %custompostelement;
+            .abouttext{
+                @extend %customabouttext;
+            }
+            .line{
+                @extend %customline;
+            }
+            .posted{
+                @extend %customposted;
+                .element1{
+                    @extend %customelement1;
+                    .person{
+                        @extend %customperson;
+                        .personimg{
+                            @extend %custompersonimg;
+                        }
+                        .persontext{
+                            @extend %custompersontext;
+                            .postext{
+                                @extend %custompostext;
+                            }
+                            .pospar{
+                                @extend %custompospar;
+                            }
+                        }
+                    }
+                    .fa-ellipsis-h{
+                        @extend %customfa-ellipsis-h;
+                    }
+                }
+                .element2{
+                    @extend %customelement2;
+                }
+                .element3{
+                    @extend %customelement3;
+                    .eltext{
+                        @extend %customeltext;
+                    }
+                    .icons{
+                        @extend %customicons;
+                        .icon1{
+                            @extend %customicon1;
+                            .far{
+                                @extend %customfar;
+                            }
+                        }
+                    }
+                }
+                .line{
+                    @extend %customline;
+                }
+            }
+        }
+    }
+    .people{
+        @extend %custompeople;
+        .active{
+            @extend %customactive;
+            .activetext{
+                @extend %customactivetext;
+            }
+            .act{
+                @extend %customact;
+                .actimg{
+                    @extend %customactimg;
+                }
+                .acttext{
+                    .t1{
+                        @extend %customt1;
+                    }
+                    .t2{
+                        @extend %customt2;
+                    }
+                }
+            }
+        }
+    }
+}

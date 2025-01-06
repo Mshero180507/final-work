@@ -1,1 +1,272 @@
 @import "mixins";
+
+%custombody{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+%customlinks{
+    width: 15vw;
+    height: 3000px;
+    background-color: purple;
+    padding-top: 80px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+%customlinkelements{
+    display: flex;
+    gap: 20px;
+}
+
+%customfas{
+    color: white;
+    margin-top: 5px;
+}
+
+%customlinkstext{
+    @include text(20px, white, 500);
+    text-decoration: none;
+}
+
+%customprofile{
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    gap: 20px;
+}
+
+%customsearch{
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 20px;
+}
+
+%customcover{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    border-radius: 10px;
+}
+
+%customimg{
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+}
+
+%customphoto{
+    width: 100%;
+    height:250px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+
+%customcircleimg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -35px;
+    left: 50px;
+}
+
+%custombutton{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: rgba(108, 106, 106, 0.818) 1px solid;
+    border-radius: 10px;
+    right: 50px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%custombuttontext{
+    margin: 0;
+    @include text(15px, black, 500);
+    font-family: inherit;
+}
+
+%custominfo{
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 50px;
+}
+
+%custompostext{
+    @include text(36px, black, 700);
+    margin-bottom:0;
+}
+
+%custompospar{
+    @include text(20px, black, 400)
+}
+
+%customposts{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.011);
+    width: 1300px;
+    height: 1000px;
+}
+
+%customabout{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: fit-content;
+    background-color: rgb(255, 254, 254);
+    padding-left: 30px;
+    padding-top: 40px;
+    gap: 15px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+%customabouttext{
+    @include text(30px, black, 700)
+}
+
+%custompostelement{
+    width: 50%;
+    height: 2450px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+%customline{
+    height: 2px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.433);
+}
+
+%customposted{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+%customelement1{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+%customperson{
+    display: flex;
+    gap: 10px;
+}
+
+%custompersonimg{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+%custompersontext{
+    display: flex;
+    flex-direction: column;
+}
+
+%customfa-ellipsis-h{
+    font-size: 30px;
+}
+
+%customelement2{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+%customelement3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+%customeltext{
+    @include text(25px, rgb(0, 0, 0), 400);
+    font-family:inherit;
+}
+
+%customicons{
+    display: flex;
+    gap: 30px;
+}
+
+%customfar{
+    font-size: 30px;
+    color: purple;
+    margin-top: 8px;
+}
+
+%customicon1{
+    display: flex;
+    gap: 10px;
+}
+
+%custompeople{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+    background-color: rgba(128, 128, 128, 0.036);
+    height: 1000px;
+}
+
+%customactive{
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+%customactivetext{
+    @include text(25px, rgb(92, 0, 85), 500);
+    font-family: inherit;
+    margin: 0;
+}
+%customact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+%customactimg{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+%customt1{
+    @include text(20px, black, 500);
+    margin: 0;
+}
+
+%customt2{
+    @include text(15px, black, 400);
+    margin: 0;
+}

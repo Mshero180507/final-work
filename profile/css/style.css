@@ -17,4 +17,322 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+.body {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(128, 128, 128, 0.082);
+}
+
+.body .links {
+  width: 15vw;
+  height: 3000px;
+  background-color: purple;
+  padding-top: 80px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.body .posts .about .linkelements, .body .links .linkelements {
+  display: flex;
+  gap: 20px;
+}
+
+.body .posts .about .linkelements .fas, .body .links .linkelements .fas {
+  color: white;
+  margin-top: 5px;
+}
+
+.body .posts .about .linkelements .linkstext, .body .links .linkelements .linkstext {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Charm", serif;
+  color: white;
+  text-decoration: none;
+}
+
+.body .profile {
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  gap: 20px;
+}
+
+.body .profile .search {
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 20px;
+}
+
+.body .profile .cover {
+  background-color: rgb(255, 255, 255);
+  height: 350px;
+  border-radius: 10px;
+}
+
+.body .profile .cover .img {
+  position: relative;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.body .profile .cover .img .photo {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.body .profile .cover .img .circleimg {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -35px;
+  left: 50px;
+}
+
+.body .profile .cover .info .button, .body .profile .cover .img .button {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: rgba(108, 106, 106, 0.818) 1px solid;
+  border-radius: 10px;
+  right: 50px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body .profile .cover .info .button .buttontext, .body .profile .cover .img .button .buttontext {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Charm", serif;
+  color: black;
+  font-family: inherit;
+}
+
+.body .profile .cover .info {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 50px;
+}
+
+.body .posts .postelement .posted .element1 .person .persontext .postext, .body .profile .cover .info .position .postext {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Charm", serif;
+  color: black;
+  margin-bottom: 0;
+}
+
+.body .posts .postelement .posted .element1 .person .persontext .pospar, .body .profile .cover .info .position .pospar {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Charm", serif;
+  color: black;
+}
+
+.body .posts {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(128, 128, 128, 0.011);
+  width: 1300px;
+  height: 1000px;
+}
+
+.body .posts .about {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(255, 254, 254);
+  padding-left: 30px;
+  padding-top: 40px;
+  gap: 15px;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+
+.body .posts .postelement .abouttext, .body .posts .about .abouttext {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Charm", serif;
+  color: black;
+}
+
+.body .posts .postelement {
+  width: 50%;
+  height: 2450px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.body .posts .postelement .posted .line, .body .posts .postelement .line {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.433);
+}
+
+.body .posts .postelement .posted {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.body .posts .postelement .posted .element1 {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.body .posts .postelement .posted .element1 .person {
+  display: flex;
+  gap: 10px;
+}
+
+.body .posts .postelement .posted .element1 .person .personimg {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.body .posts .postelement .posted .element1 .person .persontext {
+  display: flex;
+  flex-direction: column;
+}
+
+.body .posts .postelement .posted .element1 .fa-ellipsis-h {
+  font-size: 30px;
+}
+
+.body .posts .postelement .posted .element2 {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.body .posts .postelement .posted .element3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.body .posts .postelement .posted .element3 .eltext {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "Charm", serif;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+}
+
+.body .posts .postelement .posted .element3 .icons {
+  display: flex;
+  gap: 30px;
+}
+
+.body .posts .postelement .posted .element3 .icons .icon1 .far {
+  font-size: 30px;
+  color: purple;
+  margin-top: 8px;
+}
+
+.body .posts .postelement .posted .element3 .icons .icon1 {
+  display: flex;
+  gap: 10px;
+}
+
+.body .people {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  background-color: rgba(128, 128, 128, 0.036);
+  height: 1000px;
+}
+
+.body .people .active {
+  background-color: white;
+  border-radius: 10px;
+  height: 300px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.body .people .active .activetext {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Charm", serif;
+  color: rgb(92, 0, 85);
+  font-family: inherit;
+  margin: 0;
+}
+
+.body .people .active .act {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.body .people .active .act .actimg {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.body .people .active .act .acttext .t1 {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Charm", serif;
+  color: black;
+  margin: 0;
+}
+
+.body .people .active .act .acttext .t2 {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Charm", serif;
+  color: black;
+  margin: 0;
+}
+
+.body .links .linkelements .linkstext:hover {
+  text-decoration: underline;
+}
+.body .profile .cover .img .button:hover {
+  background-color: rgb(218, 70, 218);
+}
+.body .profile .cover .info .button:hover {
+  background-color: rgb(218, 70, 218);
+}
+.body .posts .about .linkelements .linkstext:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
