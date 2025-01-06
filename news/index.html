@@ -16,8 +16,12 @@
         <a href="./../index.html" class="header--name">SheroArt</a>
         
         <div class="header--form">
-            <p class="search-button">Search your product here</p>
-            <i class="fas fa-search" style="color: #565151;"></i>
+          <form action="/search" method="GET" class="form">
+              <input class="input" type="text" name="query" placeholder="Search your product here" />
+              <button type="submit" class="search-button">
+                  <i class="fas fa-search" style="color: #565151;"></i>
+              </button>
+          </form>
         </div>
 
         <div class="header--account">
@@ -41,13 +45,19 @@
       <div class="main--img">
         <img src="./images/eight.jpg" class="image">
         <div class="imagetext">
-          <h1 class="imgtitle">Art Catalog</h1>
+          <h1 class="imgtitle">Auction art</h1>
           <p class="imgtext">An art catalog is a curated assembly of artworks gathered by an individual, institution, or group, often reflecting the collector's interests, tastes, or a specific theme.</p>
         </div>
       </div>
 
       <div class="main--art">
         <div class="list">
+          <div class="search-container2">
+            <input type="text" class="search-input2" placeholder="Search Artist" id="searchInput">
+            <button class="search-button2">
+                <i class="fas fa-search"></i>
+            </button>
+          </div>
           <div class="listelements">
             <h1 class="listtext">Artist Name</h1>
             <form class="form">
@@ -112,110 +122,110 @@
 
           <div class="drawings">
             <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/women.jpg" class="Fourth-cards-pic">
+              <img src="./images/one.jpg" class="Fourth-cards-pic">
               <div class="cardcontent"> 
-                <h1 class="fourth-text">Women</h1>
+                <h1 class="fourth-text">Flower</h1>
                 <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
                 <p class="fourth-par">Current Bidding: <span style="color: black;">200.00$</span></p>
               </div>
               <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
+                <a href="" class="cardd">Bidding Start</a>
               </div>
             </div>
   
             <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/flower2.jpg" class="Fourth-cards-pic">
-              <div class="cardcontent"> 
-                <h1 class="fourth-text">Rose</h1>
-                <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
-                <p class="fourth-par">Current Bidding: <span style="color: black;">456.00$</span></p>
-              </div>
-              <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
-              </div>
-            </div>
-  
-            <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/swan.jpg" class="Fourth-cards-pic">
+              <img src="./images/two.jpg" class="Fourth-cards-pic">
               <div class="cardcontent"> 
                 <h1 class="fourth-text">Swan</h1>
                 <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
-                <p class="fourth-par">Current Bidding: <span style="color: black;">123.00$</span></p>
+                <p class="fourth-par">Current Bidding: <span style="color: black;">456.00$</span></p>
               </div>
               <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
-              </div>
-            </div>
-
-            <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/flower3.jpg" class="Fourth-cards-pic">
-              <div class="cardcontent"> 
-                <h1 class="fourth-text">Flowers</h1>
-                <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
-                <p class="fourth-par">Current Bidding: <span style="color: black;">180.00$</span></p>
-              </div>
-              <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
-              </div>
-            </div>
-
-            <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/flowers.jpg" class="Fourth-cards-pic">
-              <div class="cardcontent"> 
-                <h1 class="fourth-text">Flowers</h1>
-                <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
-                <p class="fourth-par">Current Bidding: <span style="color: black;">180.00$</span></p>
-              </div>
-              <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
+                <a href="" class="cardd">Bidding Start</a>
               </div>
             </div>
   
             <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/peacock2.jpg" class="Fourth-cards-pic">
+              <img src="./images/three.jpg" class="Fourth-cards-pic">
               <div class="cardcontent"> 
-                <h1 class="fourth-text">Peacock</h1>
+                <h1 class="fourth-text">Nature</h1>
+                <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
+                <p class="fourth-par">Current Bidding: <span style="color: black;">123.00$</span></p>
+              </div>
+              <div class="cardbutton">
+                <a href="" class="cardd">Bidding Start</a>
+              </div>
+            </div>
+
+            <div class="fourth-cards" style="border: grey 1px solid;">
+              <img src="./images/four.jpg" class="Fourth-cards-pic">
+              <div class="cardcontent"> 
+                <h1 class="fourth-text">Winter</h1>
+                <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
+                <p class="fourth-par">Current Bidding: <span style="color: black;">180.00$</span></p>
+              </div>
+              <div class="cardbutton">
+                <a href="" class="cardd">Bidding Start</a>
+              </div>
+            </div>
+
+            <div class="fourth-cards" style="border: grey 1px solid;">
+              <img src="./images/five.jpg" class="Fourth-cards-pic">
+              <div class="cardcontent"> 
+                <h1 class="fourth-text">Flowers</h1>
+                <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
+                <p class="fourth-par">Current Bidding: <span style="color: black;">180.00$</span></p>
+              </div>
+              <div class="cardbutton">
+                <a href="" class="cardd">Bidding Start</a>
+              </div>
+            </div>
+  
+            <div class="fourth-cards" style="border: grey 1px solid;">
+              <img src="./images/six.jpg" class="Fourth-cards-pic">
+              <div class="cardcontent"> 
+                <h1 class="fourth-text">Deer</h1>
                 <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
                 <p class="fourth-par">Current Bidding: <span style="color: black;">200.00$</span></p>
               </div>
               <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
+                <a href="" class="cardd">Bidding Start</a>
               </div>
             </div>
   
             <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/horse.jpg" class="Fourth-cards-pic">
+              <img src="./images/seven.jpg" class="Fourth-cards-pic">
               <div class="cardcontent"> 
-                <h1 class="fourth-text">Horse</h1>
+                <h1 class="fourth-text">Flowers</h1>
                 <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
                 <p class="fourth-par">Current Bidding: <span style="color: black;">456.00$</span></p>
               </div>
               <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
+                <a href="" class="cardd">Bidding Start</a>
               </div>
             </div>
   
             <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/landscape.jpg" class="Fourth-cards-pic">
+              <img src="./images/ten.jpg" class="Fourth-cards-pic">
               <div class="cardcontent"> 
-                <h1 class="fourth-text">Landscape</h1>
+                <h1 class="fourth-text">Bicycle</h1>
                 <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
                 <p class="fourth-par">Current Bidding: <span style="color: black;">123.00$</span></p>
               </div>
               <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
+                <a href="" class="cardd">Bidding Start</a>
               </div>
             </div>
 
             <div class="fourth-cards" style="border: grey 1px solid;">
-              <img src="./images/church.jpg" class="Fourth-cards-pic">
+              <img src="./images/nine.jpg" class="Fourth-cards-pic">
               <div class="cardcontent"> 
                 <h1 class="fourth-text">Landscape</h1>
                 <p class="fourth-par">Artist: <span style="color: black;">Mariam Sherozia</span></p>
                 <p class="fourth-par">Current Bidding: <span style="color: black;">123.00$</span></p>
               </div>
               <div class="cardbutton">
-                <a href="" class="cardd">Buy Now</a>
+                <a href="" class="cardd">Bidding Start</a>
               </div>
             </div>
           </div>
@@ -278,15 +288,15 @@
           <div class="Menu">
             <h1 class="foottext">Menu</h1>
             <a href="" class="footlinks">Artists Portfolio</a>
-            <a href="" class="footlinks">Art Catalog</a>
+            <a href="./../services/index.html" class="footlinks">Art Catalog</a>
             <a href="" class="footlinks">Departments</a>
-            <a href="./contacts/index.html" class="footlinks">Contact</a>
+            <a href="./../contacts/index.html" class="footlinks">Contact</a>
           </div>
   
           <div class="resources">
             <h1 class="foottext">Resources</h1>
             <a href="" class="footlinks">Blog</a>
-            <a href="" class="footlinks">About us</a>
+            <a href="./../about us/index.html" class="footlinks">About us</a>
             <a href="" class="footlinks">How to Bid</a>
             <a href="" class="footlinks">How to sell</a>
             <a href="" class="footlinks">F.A.Q</a>

@@ -1,6 +1,7 @@
+@import "reset";
 @import "mixins";
 @import "placeholder";
-@import "reset";
+
 
 .header{
     @extend %customheader;
@@ -19,18 +20,18 @@
 
     &--form{
         @extend %customheader--form;
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            width: 300px;
-            padding-left: 10px;
-        }
-        .search-button{
-            @extend %customsearch-button;
-            @media only screen and (min-width: 601px) and (max-width: 1024px) {
-                font-size: 15px !important;
-                margin-right: 70px;
-                margin-left: 0px;
+        .form{
+            @extend %customform;
+            .input{
+                @extend %custominput;
+                &:focus{
+                    outline: none;
+                }
             }
-        }    
+            .search-button{
+                @extend %customsearch-button;
+            }
+        } 
     }
 
     &--account{

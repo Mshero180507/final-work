@@ -41,16 +41,37 @@
     border-radius: 6px;
     background-color: #FAF8F8;
     padding-left: 30px;
-    margin-right: 30px;;
+    margin-right: 30px;
     justify-content: center;
+    padding-right: 20px;
+}
+
+
+%customform{
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    justify-content: space-between;
+}
+
+%custominput{
+    padding: 8px 12px;
+    width: 80%; 
+    border: none;
+    font-size: 16px;
+    color: #333; 
+    background-color: #FAF8F8;
 }
 
 %customsearch-button{
-   font-size: 20px !important;
-   font-weight: 400;
-   color: #565151;
-   padding-top: 10px;
-   margin-right:180px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 %customheader--account{
@@ -88,6 +109,8 @@
     margin-right: 40px;
 }
 
+
+
 /*making main page*/
 %customMain{
     margin-top:170px;
@@ -96,7 +119,8 @@
 /*section first*/
 %customMain--first{
     @include sections(white);
-    padding-top: 100px;
+    height: 750px;
+    padding-left: 110px;
 }
 
 %customGirl{

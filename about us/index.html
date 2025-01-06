@@ -16,8 +16,12 @@
         <a href="./../index.html" class="header--name">SheroArt</a>
         
         <div class="header--form">
-            <p class="search-button">Search your product here</p>
-            <i class="fas fa-search" style="color: #565151;"></i>
+          <form action="/search" method="GET" class="form">
+              <input class="input" type="text" name="query" placeholder="Search your product here" />
+              <button type="submit" class="search-button">
+                  <i class="fas fa-search" style="color: #565151;"></i>
+              </button>
+          </form>
         </div>
 
         <div class="header--account">
@@ -26,7 +30,6 @@
         </div>
 
         <hr class="header--line"></hr>
-
         <nav class="header--nav">
             <a href="./../index.html" class="header--nav--element">Home</a>
             <a href="./index.html" class="header--nav--element">About Us</a>
@@ -187,7 +190,7 @@
     
                   <div class="Commentname">
                     <h1 class="cname">Mariami</h1>
-                    <p class="cpar">Exhibition Manager</p>
+                    <p class="cpar">Artist</p>
                   </div>
     
                   <div class="Commentname" style="margin-left: 30px;">
@@ -234,15 +237,15 @@
           <div class="Menu">
             <h1 class="foottext">Menu</h1>
             <a href="" class="footlinks">Artists Portfolio</a>
-            <a href="" class="footlinks">Art Catalog</a>
+            <a href="./../services/index.html" class="footlinks">Art Catalog</a>
             <a href="" class="footlinks">Departments</a>
-            <a href="./contacts/index.html" class="footlinks">Contact</a>
+            <a href="./../contacts/index.html" class="footlinks">Contact</a>
           </div>
   
           <div class="resources">
             <h1 class="foottext">Resources</h1>
             <a href="" class="footlinks">Blog</a>
-            <a href="" class="footlinks">About us</a>
+            <a href="./index.html" class="footlinks">About us</a>
             <a href="" class="footlinks">How to Bid</a>
             <a href="" class="footlinks">How to sell</a>
             <a href="" class="footlinks">F.A.Q</a>

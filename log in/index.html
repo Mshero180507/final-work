@@ -11,8 +11,8 @@
         <h2 class="text">Log In</h2>
         <form class="form" action="./../profile/index.html">
             <input type="email" name="email" placeholder="Email Address" class="input-field" required><br>
-            <input type="password" name="password" placeholder="Password" class="input-field" required><br>
-            <button type="submit" class="signup-btn">Sign Up</button>
+            <input type="password" name="password" placeholder="Password" class="input-field" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character." required><br>
+            <button type="submit" class="signup-btn">Log In</button>
         </form>
         <div class="signup-footer">
             <p>Don't have an account? <a href="./../sign up/index.html">Sign Up</a></p>

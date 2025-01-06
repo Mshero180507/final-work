@@ -14,18 +14,22 @@
 <body>
   <header class="header">
     <a href="./../index.html" class="header--name">SheroArt</a>
-    
-    <div class="header--form">
-        <p class="search-button">Search your product here</p>
-        <i class="fas fa-search" style="color: #565151;"></i>
-    </div>
+        
+        <div class="header--form">
+          <form action="/search" method="GET" class="form">
+              <input class="input" type="text" name="query" placeholder="Search your product here" />
+              <button type="submit" class="search-button">
+                  <i class="fas fa-search" style="color: #565151;"></i>
+              </button>
+          </form>
+        </div>
 
-    <div class="header--account">
-        <i class="fas fa-user"></i>
-        <a href="./../sign up/index.html" class="header--account--profile">My Account</a>
-    </div>
+        <div class="header--account">
+            <i class="fas fa-user"></i>
+            <a href="./../sign up/index.html" class="header--account--profile">My Account</a>
+        </div>
 
-    <hr class="header--line"></hr>
+        <hr class="header--line"></hr>
 
     <nav class="header--nav">
         <a href="./../index.html" class="header--nav--element">Home</a>
@@ -61,26 +65,25 @@
                 <h1 class="Maintext">Contact Us by Email</h1>
                 <p class="number" style="font-size: 27px;">Join us for an exhilarating live auction experience where art meets excitement.</p>
             </div>
-            <div class="signup">
-                
-                <div class="name">
-                    <label for="name" style="font-size: 26px;">First Name *</label>
-                    <br>
-                    <input type="text" class="form-els" readonly placeholder="Mr. Harry">
-                </div>
+            <form class="signup" action="/submit-form" method="POST">
+              <div class="name">
+                <label for="name" style="font-size: 26px;">First Name *</label>
+                <br>
+                <input type="text" class="form-els" id="name" placeholder="Mr. Harry" required>
+               </div>
+        
+              <div class="email">
+                <label for="email" style="font-size: 26px;">Email Address *</label>
+                <br>
+                <input type="email" class="form-els" id="email" placeholder="info@example.com" required>
+              </div>
 
-                <div class="email">
-                    <label for="name" style="font-size: 26px;">Email Address *</label>
-                    <br>
-                    <input type="email" class="form-els" readonly placeholder="info@example.com">
-                </div>
-
-            </div>
-            <div class="textarea">
+            </form>
+            <form class="textarea" action="/submit-form" method="POST">
                 <label for="name" style="font-size: 26px;">Message</label>
                 <textarea  type="text" required  placeholder="Write Your Message" class="area"></textarea>
                 <button type="submit" class="submit">Submit Here</button>
-            </div>
+            </form>
         
         </div>
     </main>
@@ -115,7 +118,7 @@
         <div class="Menu">
           <h1 class="foottext">Menu</h1>
           <a href="" class="footlinks">Artists Portfolio</a>
-          <a href="" class="footlinks">Art Catalog</a>
+          <a href="./../services/index.html" class="footlinks">Art Catalog</a>
           <a href="" class="footlinks">Departments</a>
           <a href="./contacts/index.html" class="footlinks">Contact</a>
         </div>
@@ -123,7 +126,7 @@
         <div class="resources">
           <h1 class="foottext">Resources</h1>
           <a href="" class="footlinks">Blog</a>
-          <a href="" class="footlinks">About us</a>
+          <a href="./../about us/index.html" class="footlinks">About us</a>
           <a href="" class="footlinks">How to Bid</a>
           <a href="" class="footlinks">How to sell</a>
           <a href="" class="footlinks">F.A.Q</a>

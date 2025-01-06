@@ -12,9 +12,9 @@
         <form class="form" action="./../profile/index.html">
             <input type="text" name="name" placeholder="Full Name" class="input-field" required><br>
             <input type="email" name="email" placeholder="Email Address" class="input-field" required><br>
-            <input type="password" name="password" placeholder="Password" class="input-field" required><br>
-            <input type="password" name="confirm-password" placeholder="Confirm Password" class="input-field" required><br>
-            <button type="submit" class="signup-btn">Sign Up</button>
+            <input type="password" name="password" placeholder="Password" class="input-field" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character."  required><br>
+            <input type="password" name="confirm-password" placeholder="Confirm Password" class="input-field"  required><br>
+            <button type="submit" class="signup-btn">Create Account</button>
         </form>
 
         <button class="google-signup-btn">

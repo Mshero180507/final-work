@@ -43,7 +43,18 @@
     </nav>
 
     <div class="profile">
-        <div class="search"></div>
+
+        <div class="search">
+            <div class="header--form">
+                <form action="/search" method="GET" class="form">
+                    <input class="input" type="text" name="query" placeholder="Search your product here" />
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search" style="color: #565151;"></i>
+                    </button>
+                </form>
+              </div>
+        </div>
+
         <div class="cover">
             <div class="img">
                 <img src="./images/second.jpg" class="photo">

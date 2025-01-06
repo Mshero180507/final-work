@@ -1,0 +1,331 @@
+@import "reset";
+@import "placeholders";
+@import "mixins";
+
+.header{
+    @extend %customheader;
+    @media only screen and (min-width: 1025px){
+        padding: 20px 60px;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        padding: 18px 50px;;
+    }
+    &--name{
+        @extend %customheader--name;
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            margin-right: 150px;
+        }
+    }
+
+    &--form{
+        @extend %customheader--form;
+        .form{
+            @extend %customform;
+            .input{
+                @extend %custominput;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .search-button{
+                @extend %customsearch-button;
+            }
+        } 
+    }
+
+    &--account{
+        &:hover {
+            background-color:rgb(181, 160, 0);
+            width: 155px;
+            height: 65px;
+        }
+
+        @extend %customheader--account;
+        
+
+        .fa-user{
+            @extend %customfa-user;
+        }
+        
+        &--profile{
+            @extend %customheader--account--profile;
+        }
+    }
+
+    &--line{
+        @extend %customheader--line;
+    }
+
+    &--nav{
+        &--element{
+            @extend %customheader--nav--element;
+            &:hover {
+                text-decoration:underline;
+                color:rgb(181, 160, 0);
+            }
+        }
+    }
+}
+
+
+.Footer{
+    @extend %customFooter;
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        padding: 40px;
+        gap: 20px;
+    }
+
+    &--logo{
+        @extend %customFooter--logo;
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            width:300px;
+        }
+        .footertext{
+            @extend %customfootertext;
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                font-size: 25px;
+            }
+        }
+        .footerpar{
+            @extend %customfooterpar;
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                font-size: 18px;
+            }
+        }
+        .footerlinks{
+            @extend %customfooterlinks;
+            .links{
+                @extend %customlinks;
+                .linkstext{
+                    @extend %customlinkstext;
+                }
+            }
+        }
+    }
+
+    .verticalline{
+        @extend %customverticalline;
+    }
+
+    &--links{
+        @extend %customFooter--links;
+        .Menu{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 15px;
+                }
+            }
+        }
+        .resources{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 15px;
+                }
+            }
+            
+        }
+    }
+
+    &--sponsors{
+        @extend %customsponsors;
+        .spontext{
+            @extend %customfoottext;
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                font-size: 20px;
+            }
+        }
+        .footer--logo{
+            @extend %customfooter--logo;
+            &:hover{
+                width: 75px;
+            }
+        }
+    }
+    
+}
+
+.main{
+    @extend %custommain;
+    &--img{
+        @extend %custommain--img;
+        .image{
+            @extend %customimage;
+        }
+        .imagetext{
+            @extend %customimagetext;
+            .imgtitle{
+                @extend %customimgtitle;
+            }
+            .imgtext{
+                @extend %customimgtext;
+            }
+        }
+        .fridaimg{
+            @extend %customfridaimg;
+        }
+    }
+    &--art{
+        @extend %custommain--art;
+        .list{
+            .search-container2{
+                @extend %customsearch-container2;
+                .search-input2{
+                     @extend %customsearch-input2;
+                }
+                .search-button2{
+                    @extend %customsearch-button2;
+                    &:hover{
+                        background-color: rgba(128, 128, 128, 0.533);
+                    }
+                    .fa-search{
+                        @extend %customfa-search;
+                    }
+                }
+            }
+            @extend %customlist;
+            .listelements{
+                @extend %customlistelements;
+                .listtext{
+                    @extend %customlisttext;
+                }
+                .form{
+                    .formname{
+                        @extend %customformname;
+                    }
+                    .checkbox{
+                        @extend %customcheckbox;
+                    }
+                }
+                .more{
+                    @extend %custommore;
+                }
+            }
+
+            .filter-container{
+                @extend %customfilter-container;
+                .price-label{
+                    @extend %customprice-label;
+                }
+                .price-range{
+                    @extend %customprice-range;
+                }
+                .range-values{
+                    @extend %customrange-values;
+                }
+            
+            }
+        }
+
+        .paintings{
+            @extend %custompaintings;
+            .paintingtop{
+                @extend %custompaintingtop;
+                .top{
+                    @extend %customtop;
+                    .toptext{
+                        @extend %customtoptext;
+                    }
+                    .sort{
+                        @extend %customsort;
+                        .sorttext{
+                            @extend %customsorttext;
+                        }
+                    }
+                }
+                .topline{
+                    @extend %customtopline;
+                }
+            }
+            .drawings{
+                @extend %customdrawings;
+                .fourth-cards{
+                    @extend %customfourth-cards;
+                    .Fourth-cards-pic{
+                        &:hover{
+                            width: 320px;
+                        }
+                        @extend %customFourth-cards-pic;
+                    }
+                }
+                .cardcontent{
+                    @extend %customcardcontent;
+                    .fourth-text{
+                        @extend %customfourth-text;
+                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                            @include text(20px);
+                        }
+                    }
+                    .fourth-par{
+                        @extend %fourth-par;
+                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                            font-size: 14px;
+                        }
+                    }
+                } 
+                .cardbutton{
+                    @extend %customcardbutton;
+                    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                        width: 70px;
+                        height: 30px;
+                    }
+                    &:hover{
+                        background-color: rgba(146, 113, 30, 0.916);
+                    }
+                    .cardd{
+                        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                            font-size: 12px;
+                        }
+                        @extend %customcardd;
+                    }
+                }
+            }
+            .paintingsbottom{
+                @extend %custompaintingsbottom;
+                .next{
+                    @extend %customnext;
+                    &:hover{
+                        background-color: rgb(194, 163, 10);
+                    }
+                    .bottomtext{
+                        @extend %custombottomtext;
+                    }
+                }
+                .circles{
+                    @extend %customcircles;
+                    .spot{
+                        @extend %customspot;
+                        &:hover{
+                            background-color: rgb(194, 163, 10);
+                        }
+                        .num{
+                            @extend %customnum;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

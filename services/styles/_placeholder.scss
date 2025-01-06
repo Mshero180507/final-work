@@ -41,16 +41,37 @@
     border-radius: 6px;
     background-color: #FAF8F8;
     padding-left: 30px;
-    margin-right: 30px;;
+    margin-right: 30px;
     justify-content: center;
+    padding-right: 20px;
+}
+
+
+%customform{
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    justify-content: space-between;
+}
+
+%custominput{
+    padding: 8px 12px;
+    width: 80%; 
+    border: none;
+    font-size: 16px;
+    color: #333; 
+    background-color: #FAF8F8;
 }
 
 %customsearch-button{
-   font-size: 20px !important;
-   font-weight: 400;
-   color: #565151;
-   padding-top: 10px;
-   margin-right:180px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 %customheader--account{
@@ -214,6 +235,37 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+%customsearch-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+%customsearch-input2 {
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    width: 200px;
+}
+
+%customsearch-button2 {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+%customfa-search{
+    color: white;
+    font-size: 18px;
 }
 
 %customlistelements{
@@ -399,3 +451,31 @@
     color: #565151e1;
     font-weight: 500;
 }
+
+/*price filter*/
+%customfilter-container {
+    text-align: center;
+}
+
+%customprice-label {
+    @include text(36px);
+    font-weight: bold;
+}
+
+%customrange-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+}
+
+%customprice-range{
+    width: 100%;
+    appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+

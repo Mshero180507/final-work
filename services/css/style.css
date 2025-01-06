@@ -51,14 +51,34 @@ time, mark, audio, video {
   padding-left: 30px;
   margin-right: 30px;
   justify-content: center;
+  padding-right: 20px;
 }
 
-.header--form .search-button {
-  font-size: 20px !important;
-  font-weight: 400;
-  color: #565151;
-  padding-top: 10px;
-  margin-right: 180px;
+.header--form .form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header--form .form .input {
+  padding: 8px 12px;
+  width: 80%;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  background-color: #FAF8F8;
+}
+
+.header--form .form .search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header--account {
@@ -236,6 +256,37 @@ time, mark, audio, video {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.main--art .list .search-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.main--art .list .search-container2 .search-input2 {
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.main--art .list .search-container2 .search-button2 {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.main--art .list .search-container2 .search-button2 .fa-search {
+  color: white;
+  font-size: 18px;
 }
 
 .main--art .list .listelements {
@@ -427,6 +478,37 @@ time, mark, audio, video {
   font-weight: 500;
 }
 
+/*price filter*/
+.main--art .list .filter-container {
+  text-align: center;
+}
+
+.main--art .list .filter-container .price-label {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Charm", serif;
+  font-weight: bold;
+}
+
+.main--art .list .filter-container .range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.main--art .list .filter-container .price-range {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
 @media only screen and (min-width: 1025px) {
   .header {
     padding: 20px 60px;
@@ -442,18 +524,8 @@ time, mark, audio, video {
     margin-right: 150px;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .header--form {
-    width: 300px;
-    padding-left: 10px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .header--form .search-button {
-    font-size: 15px !important;
-    margin-right: 70px;
-    margin-left: 0px;
-  }
+.header--form .form .input:focus {
+  outline: none;
 }
 .header--account:hover {
   background-color: rgb(181, 160, 0);
@@ -521,6 +593,9 @@ time, mark, audio, video {
   width: 75px;
 }
 
+.main--art .list .search-container2 .search-button2:hover {
+  background-color: rgba(128, 128, 128, 0.533);
+}
 .main--art .paintings .drawings .fourth-cards .Fourth-cards-pic:hover {
   width: 320px;
 }

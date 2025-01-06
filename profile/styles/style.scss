@@ -23,6 +23,21 @@
         @extend %customprofile;
         .search{
             @extend %customsearch;
+            .header--form{
+                @extend %customheader--form;
+                .form{
+                    @extend %customform;
+                    .input{
+                        @extend %custominput;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .search-button{
+                        @extend %customsearch-button;
+                    }
+                } 
+            }
         }
         .cover{
             @extend %customcover;
