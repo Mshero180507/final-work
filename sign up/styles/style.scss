@@ -6,6 +6,7 @@
     @extend %custombody;
     .signup-container{
         @extend %customsignup-container;
+
         .text{
             @extend %customtext;
         }
@@ -22,6 +23,15 @@
                 &:hover{
                     background-color: #45a049;
                 }
+            }
+        }
+        .google-signup-btn{
+            &:hover{
+                background-color: rgba(114, 114, 114, 0.089);
+            }
+            @extend %customgoogle-signup-btn;
+            .google-logo{
+                @extend %customgoogle-logo;
             }
         }
         .signup-footer{

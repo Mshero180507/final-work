@@ -36,11 +36,11 @@ time, mark, audio, video {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 400px;
   text-align: center;
-  height: 50vh;
+  height: auto;
 }
 
 .body .signup-container .text {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 25px;
 }
 
@@ -65,8 +65,30 @@ time, mark, audio, video {
 }
 
 .body .signup-container .signup-footer {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
+}
+
+.body .signup-container .google-signup-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.body .signup-container .google-signup-btn .google-logo {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
 
 .body .signup-container .form .input-field:focus {
@@ -75,4 +97,7 @@ time, mark, audio, video {
 }
 .body .signup-container .form .signup-btn:hover {
   background-color: #45a049;
+}
+.body .signup-container .google-signup-btn:hover {
+  background-color: rgba(114, 114, 114, 0.089);
 }/*# sourceMappingURL=style.css.map */
