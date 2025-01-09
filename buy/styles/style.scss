@@ -1,0 +1,227 @@
+@import "reset";
+@import "placeholders";
+@import "mixins";
+
+.header{
+    @extend %customheader;
+    @media only screen and (min-width: 1025px){
+        padding: 20px 60px;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        padding: 18px 50px;;
+    }
+    &--name{
+        @extend %customheader--name;
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            margin-right: 150px;
+        }
+    }
+
+    &--form{
+        @extend %customheader--form;
+        .form{
+            @extend %customform;
+            .input{
+                @extend %custominput;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .search-button{
+                @extend %customsearch-button;
+            }
+        } 
+    }
+
+    &--account{
+        &:hover {
+            background-color:rgb(181, 160, 0);
+            width: 155px;
+            height: 65px;
+        }
+
+        @extend %customheader--account;
+        
+
+        .fa-user{
+            @extend %customfa-user;
+        }
+        
+        &--profile{
+            @extend %customheader--account--profile;
+        }
+    }
+
+    &--line{
+        @extend %customheader--line;
+    }
+
+    &--nav{
+        &--element{
+            @extend %customheader--nav--element;
+            &:hover {
+                text-decoration:underline;
+                color:rgb(181, 160, 0);
+            }
+        }
+    }
+}
+
+
+.Footer{
+    @extend %customFooter;
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        padding: 40px;
+        gap: 20px;
+    }
+
+    &--logo{
+        @extend %customFooter--logo;
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            width:300px;
+        }
+        .footertext{
+            @extend %customfootertext;
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                font-size: 25px;
+            }
+        }
+        .footerpar{
+            @extend %customfooterpar;
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                font-size: 18px;
+            }
+        }
+        .footerlinks{
+            @extend %customfooterlinks;
+            .links{
+                @extend %customlinks;
+                .linkstext{
+                    @extend %customlinkstext;
+                }
+            }
+        }
+    }
+
+    .verticalline{
+        @extend %customverticalline;
+    }
+
+    &--links{
+        @extend %customFooter--links;
+        .Menu{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 15px;
+                }
+            }
+        }
+        .resources{
+            @extend %customMenu;
+            .foottext{
+                @extend %customfoottext;
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+            }
+            .footlinks{
+                @extend %customfootlinks;
+                &:hover{
+                    text-decoration: underline
+                }
+                @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                    font-size: 15px;
+                }
+            }
+            
+        }
+    }
+
+    &--sponsors{
+        @extend %customsponsors;
+        .spontext{
+            @extend %customfoottext;
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                font-size: 20px;
+            }
+        }
+        .footer--logo{
+            @extend %customfooter--logo;
+            &:hover{
+                width: 75px;
+            }
+        }
+    }
+    
+}
+
+.main{
+    @extend %custommain;
+    .product{
+        @extend %customproduct;
+        .photo{
+            @extend %customphoto;
+            .img{
+                @extend %customimg;
+            }
+        }
+        .discription{
+            .title{
+                @extend %customtitle;
+            }
+            .text{
+                @extend %customtext;
+            }
+            .button{
+                @extend %custombutton;
+                &:hover{
+                    background-color: rgb(181, 160, 0);
+                }
+                .text{
+                    @extend %customtext;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .data{
+                @extend %customdata;
+                .el{
+                    @extend %customel;
+                }
+                .el-text{
+                    @extend %customel-text;
+                }
+            }
+        }
+    }
+
+    .information{
+        @extend %custominformation;
+        .box1{
+            @extend %custombox1;
+            .title{
+                @extend %customtitle;
+            }
+            .text2{
+                @extend %customtext2;
+            }
+            .text3{
+                @extend %customtext3;
+            }
+        }
+    }
+}
+
+
