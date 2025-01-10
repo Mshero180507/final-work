@@ -71,7 +71,6 @@ time, mark, audio, video {
 }
 
 .header--form .form .search-button {
-  background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 8px 12px;
