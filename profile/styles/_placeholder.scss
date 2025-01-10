@@ -1,6 +1,15 @@
 @import "mixins";
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 %custombody{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
     background-color: rgba(128, 128, 128, 0.082);
@@ -12,12 +21,19 @@
     background-color: purple;
     padding-top: 80px;
     padding-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
 }
 
 %customlinkelements{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -33,8 +49,13 @@
 }
 
 %customprofile{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 1500px;
     gap: 20px;
 }
@@ -42,30 +63,48 @@
 %customsearch{
     height: 10vh;
     background-color: rgba(128, 128, 128, 0.025);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 %customheader--form{
     width: 100%;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 6px;
     background-color: #ffffff;
     padding-left: 30px;
     margin-right: 30px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-right: 20px;
 }
 
 
 %customform{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 %custominput{
@@ -83,9 +122,15 @@
     cursor: pointer;
     padding: 8px 12px;
     margin-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 %customcover{
@@ -103,7 +148,8 @@
 %customphoto{
     width: 100%;
     height:250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: absolute;
     border-radius: 10px;
 }
@@ -111,7 +157,8 @@
 %customcircleimg{
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 100%;
     position: absolute;
     bottom: -35px;
@@ -127,9 +174,15 @@
     border-radius: 10px;
     right: 50px;
     bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 %custombuttontext{
@@ -140,9 +193,15 @@
 
 %custominfo{
     height: 100px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left: 200px;
     padding-right: 50px;
 }
@@ -157,6 +216,8 @@
 }
 
 %customposts{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
     background-color: rgba(128, 128, 128, 0.011);
@@ -165,9 +226,16 @@
 }
 
 %customabout{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 20%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: rgb(255, 254, 254);
     padding-left: 30px;
@@ -187,8 +255,13 @@
     background-color: white;
     border-radius: 10px;
     padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 15px;
 }
 
@@ -199,18 +272,29 @@
 }
 
 %customposted{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
 }
 
 %customelement1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 70px;
 }
 
 %customperson{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
 }
@@ -218,13 +302,19 @@
 %custompersonimg{
     width: 70px;
     height: 70px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 100%;
 }
 
 %custompersontext{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customfa-ellipsis-h{
@@ -234,13 +324,19 @@
 %customelement2{
     width: 100%;
     height: 500px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
 }
 
 %customelement3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 10px;
 }
 
@@ -250,6 +346,8 @@
 }
 
 %customicons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
 }
@@ -261,13 +359,20 @@
 }
 
 %customicon1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
 }
 
 %custompeople{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
     width: 25%;
     background-color: rgba(128, 128, 128, 0.036);
@@ -280,8 +385,13 @@
     height: 300px;
     width: 100%;
     padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px
 }
 
@@ -291,15 +401,20 @@
     margin: 0;
 }
 %customact{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 %customactimg{
     width: 40px;
     height: 40px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 100%;
 }
 

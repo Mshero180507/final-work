@@ -1,11 +1,21 @@
 @import "mixins";
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 %customheader{
     height: 150px;
     padding: 18px 80px;
     margin-top: -170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
     position: fixed;
     z-index: 1;
     background-color: white;
@@ -36,22 +46,34 @@
 %customheader--form{
     width: 500px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 6px;
     background-color: #FAF8F8;
     padding-left: 30px;
     margin-right: 30px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-right: 20px;
 }
 
 
 %customform{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 %custominput{
@@ -69,19 +91,31 @@
     cursor: pointer;
     padding: 8px 12px;
     margin-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 %customheader--account{
     width: 150px;
     height: 60px;
     background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 10px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -114,9 +148,12 @@
     height: 350px;
     width: 100%;
     background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 100px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 60px;
 }
 
@@ -138,6 +175,8 @@
 }
 
 %customFooter--links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 80px;
 }
@@ -154,13 +193,23 @@
 }
 
 %customMenu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customsponsors{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customfooter--logo{
@@ -168,13 +217,20 @@
 }
 
 %customfooterlinks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 25px;
 }
 
 %customlinks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 
@@ -225,20 +281,32 @@
 
 %custommain--art{
     padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
 }
 
 %customlist{
     width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
 }
 
 %customlistelements{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: white;
 }
 
@@ -255,7 +323,9 @@
 }
 
 %customcheckbox{
-    transform: scale(1.7); 
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7); 
 }
 
 %custommore{
@@ -267,15 +337,25 @@
 }
 
 %custompaintings{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 1000px;
 }
 
 %customdrawings{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 %customFourth-cards-pic{
@@ -289,6 +369,8 @@
 
 %customfourth-cards{
     background-color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-radius: 5px;
     margin-bottom: 20px
@@ -306,9 +388,12 @@
 }
 
 %customMain--fourth--cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
-    justify-content:space-around;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
     position: relative;
 }
 
@@ -320,9 +405,13 @@
     border-radius: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 %customcardd{
@@ -334,13 +423,22 @@
 }
 
 %custompaintingtop{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customtop{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 %customtoptext{
     @include text2(20px, rgb(73, 73, 73));
@@ -354,11 +452,15 @@
     width: 200px;
     background-color: white;
     height: 40px;
-    justify-content:space-between;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     border-radius: 10px;
     border: #565151 1px solid;
     padding:7px;
     padding-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
 }
@@ -376,8 +478,12 @@
 }
 
 %custompaintingsbottom{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding:20px;
     border: #565151ad 1px solid;
     margin-bottom: 100px;
@@ -391,8 +497,12 @@
     background-color: white;
     border-radius: 10px;
     border: #565151ad 1px solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     gap: 5px;
 }
@@ -404,6 +514,8 @@
 }
 
 %customcircles{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 15px;
 }
@@ -413,7 +525,11 @@
     width: 30px;
     border-radius: 100%;
     border: #565151ad 1px solid;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -424,9 +540,15 @@
 
 /*search button*/
 %customsearch-container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border: 2px solid #ccc;
     border-radius: 20px;
     padding: 5px;

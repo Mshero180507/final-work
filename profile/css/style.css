@@ -19,6 +19,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .body {
   display: flex;
   gap: 20px;
@@ -125,7 +131,7 @@ time, mark, audio, video {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   border-radius: 10px;
 }
@@ -134,7 +140,7 @@ time, mark, audio, video {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
   position: absolute;
   bottom: -35px;
@@ -255,7 +261,7 @@ time, mark, audio, video {
   width: 70px;
   height: 70px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
 }
 
@@ -272,7 +278,7 @@ time, mark, audio, video {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -345,7 +351,7 @@ time, mark, audio, video {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
 }
 

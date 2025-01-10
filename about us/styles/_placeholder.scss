@@ -1,11 +1,21 @@
 @import "mixins";
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 %customheader{
     height: 150px;
     padding: 18px 80px;
     margin-top: -170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
     position: fixed;
     z-index: 1;
     background-color: white;
@@ -36,22 +46,34 @@
 %customheader--form{
     width: 500px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 6px;
     background-color: #FAF8F8;
     padding-left: 30px;
     margin-right: 30px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-right: 20px;
 }
 
 
 %customform{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 %custominput{
@@ -69,19 +91,31 @@
     cursor: pointer;
     padding: 8px 12px;
     margin-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 %customheader--account{
     width: 150px;
     height: 60px;
     background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 10px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -138,7 +172,9 @@
 %customMain--first--text{
     width: 500px;
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 50px;
 }
 
@@ -153,8 +189,11 @@
 }
 
 %customtables{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap:150px;
 }
 
@@ -204,8 +243,13 @@
 }
 
 %customsixthtext{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 550px;
 }
 
@@ -223,10 +267,15 @@
 /*making seventh section*/
 %customMain--seventh{
     @include sections(white);
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %costumcomments{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
 }
@@ -249,6 +298,8 @@
 }
 
 %customcommentfoot{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 15px;
 }
@@ -260,8 +311,13 @@
 }
 
 %customCommentname{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customcname{
@@ -278,9 +334,12 @@
     height: 350px;
     width: 100%;
     background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 100px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 60px;
 }
 
@@ -302,6 +361,8 @@
 }
 
 %customFooter--links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 80px;
 }
@@ -318,13 +379,23 @@
 }
 
 %customMenu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customsponsors{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 %customfooter--logo{
@@ -332,13 +403,20 @@
 }
 
 %customfooterlinks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 25px;
 }
 
 %customlinks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 

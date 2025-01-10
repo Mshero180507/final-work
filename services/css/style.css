@@ -19,6 +19,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .header {
   height: 150px;
   padding: 18px 80px;
@@ -500,8 +506,8 @@ time, mark, audio, video {
 .main--art .list .filter-container .price-range {
   width: 100%;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   height: 8px;
   background: #ddd;
   border-radius: 5px;
